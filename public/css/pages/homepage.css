@@ -10,22 +10,24 @@
     left: 0%;
     transform: translate(0%, -10%);
     object-fit: contain;
-    
+    pointer-events: none;
 }
 .home-hero .container-child{
-    width: 100%;
+    width: 80%;
     margin: 0 auto;
-    padding-top: 175px;
-    padding-bottom: 250px;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 
 .home-hero h1{
     font-weight: 600;
     color: black;
     font-size: 42px;
+    line-height: 1.7;
 }
 
 .home-hero h5{
+    line-height: 1.7;
     margin-top: 15px;
     color: rgba(0, 0, 0, 0.5);
     font-size: 20px;
@@ -41,6 +43,30 @@
     font-weight: 700;
 }
 
+
+
+/* HOME CONTENT */
+.home-contents{
+    position: relative;
+    overflow: hidden;
+}
+
+.home-contents .img-bg-1{
+    z-index: -1;
+    position: absolute;
+    right: 0%;
+    top: 0%;
+    transform: translate(1%, -22%);
+    pointer-events: none;
+}
+.home-contents .img-bg-2    {
+    z-index: -1;
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    transform: translate(0%, 0%);
+    pointer-events: none;
+}
 .button-orange{
     background: #F7761E;
     border-radius: 10px;
@@ -55,7 +81,8 @@
     margin-bottom: 150px;
 }
 
-.home-division > h3{
+.home-division .container-child{
+    width: 80%;
     margin: 0 auto;
 }
 .home-division > h3 span{
@@ -68,37 +95,17 @@
     line-height: 1.8;
 }
 
-.home-division a{
+.home-division .link{
     color: #F7761E;
 }
 
-.home-division .box{
-    padding: 45px;
-    border: 1px solid rgba(191, 144, 0, 1);
-    background: white;
-    border-radius: 10px;
-    
-    
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    
-    
-    box-shadow: 0px 6px 2px rgba(191, 144, 0, 0.1);
-}
 
-.home-division .box .title-child{
-    margin-bottom: 5px;
-    color: #F7761E;
-    font-size: 18px;
-    font-weight: 700;
-}
 
 .title-division{
     font-size: 32px;
     color: black;
     font-weight: 700;
-    margin-bottom: 25px !important;
+    margin-bottom: 30px;
 }
 
 .title-division span{
@@ -111,6 +118,27 @@
     font-size: 18px;
 }
 
+/* Benefit Gudangin */
+
+.home-division .box{
+    padding: 45px;
+    border: 1px solid rgba(191, 144, 0, 1);
+    background: white;
+    border-radius: 10px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+    
+    box-shadow: 0px 21px 20px rgba(191, 144, 0, 0.1);
+}
+
+.home-division .box .title-child{
+    margin-bottom: 5px;
+    color: #F7761E;
+    font-size: 18px;
+    font-weight: 700;
+}
 .box .number-box{
     position: relative;
     min-width: none;
@@ -137,6 +165,52 @@
  }
  
 
+/* Fitur Gudangin */
+
+#fitur-gudangin .title-child{
+    font-size: 14px;
+    text-align: center;
+}
+#fitur-gudangin .row > div{
+    margin-bottom: 25px;
+}
+
+#fitur-gudangin img{
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+#fitur-gudangin .box{
+    height: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 25px;
+}
+
+
+/* Stay At Home */
+.stay-at-home-container{
+    width: 60%;
+    margin: 0 auto;
+}
+
+.stay-at-home-container > *{
+    text-align: center;
+}
+.stay-at-home-container .flex{
+    display: flex;
+    justify-content: center;
+}
+
+.stay-at-home-container .button-orange{
+    width: 60%;
+    padding-right: 35px;
+    padding-left: 35px;
+}
 /* Scroller Part */
 
 
@@ -169,8 +243,8 @@
     
     justify-content: center;
     align-items: center;
-    max-width: 650px;
-    
+    max-width: 500px;
+    min-width: 400px;
     box-shadow: 0px 6px 2px rgba(191, 144, 0, 0.1);
 }
 
@@ -205,8 +279,162 @@
 
 @media (min-width: 768px) {
 
+    
+
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 991px) {
+    
+    .home-hero .container-child{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    .home-division .container-child{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .home-hero h1{
+        
+        font-size: 40px;
+        line-height: 1.7;
+    }
+    .title-division{
+        font-size: 30px;
+    }
+    .home-hero h5{
+        font-size: 18px;
+    }
+    .home-division{
+        margin-bottom: 140px;
+    }
+    .button-orange{
+        
+        padding: 8px 25px;
+        font-size: 18px;
+        border: 3px solid black;
+       
+    }
+    .stay-at-home-container{
+        width: 65%;
+
+    }
+}
+
+@media (max-width: 767px) {
+    .home-hero .container-child{
+        width: 90%;
+        margin: 0 auto;
+        padding-top: 175px;
+        padding-bottom: 175px;
+    }
+
+    .home-hero h1{
+        font-size: 36px;
+        line-height: 1.7;
+    }
+    .title-division{
+        font-size: 28px;
+        margin-bottom: 26px;
+    }
+    .home-division .p-explain{
+        
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    .text-explain-title{
+        
+        font-size: 16px;
+    }
+    .home-hero h5{
+        font-size: 18px;
+    }
+
     .promo-carousel .item-wrap { 
         width: 200%; 
     }
+    .promo-carousel .item-wrap p{
+        
+        font-size: 14px;
+        
+    }
+    .home-division{
+        margin-bottom: 125px;
+    }
+    .stay-at-home-container{
+        width: 70%;
 
+    }
+    
+}
+
+@media (max-width: 575px) {
+    .home-hero h1{
+        font-size: 32px;
+        line-height: 1.7;
+    }
+    .title-division{
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    .home-division .p-explain{
+        
+        font-size: 14px;
+        line-height: 1.7;
+    }
+    .text-explain-title{
+        
+        font-size: 14px;
+    }
+    .home-hero h5{
+        font-size: 16px;
+    }
+
+    .promo-carousel .item-wrap p{
+        
+        font-size: 13px;
+        
+    }
+    .home-division{
+        margin-bottom: 100px;
+    }
+    .flex-number-box{
+        width: 100%;
+        justify-content: center;
+        display: flex;
+    }
+    .button-orange{
+        
+        padding: 8px 25px;
+        font-size: 16px;
+        border: 3px solid black;
+       
+    }
+    .stay-at-home-container{
+        width: 80%;
+    }
+    .stay-at-home-container .button-orange{
+        width: 80%;
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+
+    #fitur-gudangin .box{
+        padding: 30px 20px
+
+    }
+    #benefit-gudangin .box .title-child{
+        text-align: center;
+    } 
+    #benefit-gudangin .box .p-explain{
+        text-align: justify;
+    }
+
+    .responsive-br{
+        display: none !important;
+    }
 }

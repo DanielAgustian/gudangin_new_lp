@@ -16,3 +16,4 @@ use Illuminate\Support\Facades\Route;
 //Route::get('/', '@landing');
 Route::get('/', 'PageController@homePage')->name('homePage');
 
+Route::get('/harga', 'PageController@harg')->name('homePage');
