@@ -25,7 +25,7 @@
                                 ">Solusi</a>
                         </li>
                         <li>
-                            <a href="" class="">Harga</a>
+                            <a href="{{route('pricingPage')}}" class="{{ set_active_sidebar('pricingPage') }}">Harga</a>
                         </li>
     
                     </ul>
@@ -52,7 +52,7 @@
                             ">Solusi</a>
         </li>
         <li>
-            <a href="" class="">Harga</a>
+            <a href="{{route('pricingPage')}}" class="{{ set_active_sidebar('pricingPage') }}">Harga</a>
         </li>
 
     </ul>

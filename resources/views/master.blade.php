@@ -17,7 +17,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}"> --}}
 
     <!-- Styles -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins:400,700,900&display=swap' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap' rel='stylesheet'>
     {{-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
     <link
@@ -59,7 +59,7 @@
             });
         });
     </script>
-    
+
     <script>
         console.log("testing click");
         var toggle = false;
