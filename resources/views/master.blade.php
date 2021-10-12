@@ -59,6 +59,7 @@
             });
         });
     </script>
+    
     <script>
         console.log("testing click");
         var toggle = false;

@@ -10,5 +10,8 @@ class PageController extends Controller
     {
         return view('pages.homepage');
     }
-
+    public function pricingPage()
+    {
+        return view('pages.pricing');
+    }
 }

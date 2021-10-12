@@ -2,16 +2,17 @@
     <div class="container">
         <div class="landing_navbar">
             <div class="division">
-                <div class="landing_nav_side_btn">
-                    <button id="btn_sidebar">
-                        <i class="fas fa-bars"></i>
-                    </button>
-                </div>
                 <div class="landing_nav_logo">
                     <a href="">
                         <img src="{{ asset('images/navbar_logo.svg') }}" alt="logo">
                     </a>
                 </div>
+                <div class="landing_nav_side_btn">
+                    <button id="btn_sidebar">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+                
                 <div class="landing_nav_menu">
                     <ul>
                         <li>
@@ -59,39 +60,5 @@
 
 
 
-@section('pageJS')
-    <script src="{{ asset('plugin/marquee-scroll/dist/grouploop-1.0.0.min.js') }}"></script>
-    <script>
-        $('#grouploop-1').grouploop({
-            // animation speed
-            velocity: 1.5,
-            // false = from left to right
-            forward: true,
-            // default selectors
-            childNode: ".item",
-            childWrapper: ".item-wrap",
-            // enable pause on hover
-            pauseOnHover: true,
-            // stick the first item
-            stickFirstItem: true,
-            // callback
-            complete: null
-        });
 
-        $('#grouploop-2').grouploop({
-            // animation speed
-            velocity: 1.5,
-            // false = from left to right
-            forward: false,
-            // default selectors
-            childNode: ".item",
-            childWrapper: ".item-wrap",
-            // enable pause on hover
-            pauseOnHover: true,
-            // stick the first item
-            stickFirstItem: true,
-            // callback
-            complete: null
-        });
-    </script>
-@endsection
+
