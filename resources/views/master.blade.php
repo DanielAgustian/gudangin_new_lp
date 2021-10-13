@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Lorem Ipsum">
-    <meta name="keywords" content="admin,dashboard">
+    <meta name="description" content="Gudangin Cloud Warehouse">
+    <meta name="keywords" content="warehouse,cloud">
     <meta name="author" content="stacks">
     <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
@@ -18,11 +18,7 @@
 
     <!-- Styles -->
     <link href='https://fonts.googleapis.com/css?family=Poppins:400,500,700,900&display=swap' rel='stylesheet'>
-    {{-- <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700&display=swap" rel="stylesheet">
-    <link
-        href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-        rel="stylesheet"> --}}
+    
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -46,11 +42,7 @@
 
     <!-- Javascripts -->
     <script src="{{ asset('plugin/jquery/jquery-3.4.1.min.js') }}"></script>
-    {{-- <script src="{{ asset('plugins/bootstrap/popper.min.js') }}"></script>
-    <script src="{{ asset('plugins/bootstrap/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('plugins/jquery-slimscroll/jquery.slimscroll.min.js') }}"></script> --}}
-
-
+   
     <script>
         $(function() {
             $(document).scroll(function() {
