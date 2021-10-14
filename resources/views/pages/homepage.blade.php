@@ -32,13 +32,16 @@
 
                 <div class="item-wrap">
                     <div class="item active">
-                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat / pertanyaan pelanggan</p>
+                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat /
+                            pertanyaan pelanggan</p>
                     </div>
                     <div class="item">
-                        <p>Omzet usaha belum cukup untuk menambah infrastruktur seperti rak-rak apalagi penambahan gudang</p>
+                        <p>Omzet usaha belum cukup untuk menambah infrastruktur seperti rak-rak apalagi penambahan gudang
+                        </p>
                     </div>
                     <div class="item">
-                        <p>Habis waktu berjam-jam dalam sehari untuk pengemasan (packing) dan mencetak berlembar-lembar resi dan label</p>
+                        <p>Habis waktu berjam-jam dalam sehari untuk pengemasan (packing) dan mencetak berlembar-lembar resi
+                            dan label</p>
                     </div>
                 </div>
 
@@ -54,7 +57,8 @@
                     </div>
 
                     <div class="item">
-                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat / pertanyaan pelanggan</p>
+                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat /
+                            pertanyaan pelanggan</p>
                     </div>
                 </div>
 
@@ -164,14 +168,14 @@
                     <div class="row">
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon">
+                                {{-- <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon"> --}}
 
                                 <p class="title-child">Integrasi toko online dari beberapa marketplace sekaligus</p>
                             </div>
                         </div>
                         <div class="col-md-4">
                             <div class="box">
-                                <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon">
+                                {{-- <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon"> --}}
 
                                 <p class="title-child">Agregasi SKU Produk, data orderan/transaksi, jumlah pembeli dan
                                     data
@@ -180,7 +184,7 @@
                         </div>
                         <div class="col-md-4">
                             <div class="box text-center">
-                                <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon">
+                                {{-- <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon"> --}}
 
                                 <p class="title-child">Agregasi chat dari beberapa marketplace sehingga admin tidak perlu
                                     lagi login-logout banyak akun</p>
