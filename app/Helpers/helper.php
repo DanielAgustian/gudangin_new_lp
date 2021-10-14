@@ -1,6 +1,6 @@
 <?php
 
-function set_active_sidebar($uri, $output = 'active-page')
+function set_active_sidebar($uri, $output = 'active')
 {
  if( is_array($uri) ) {
    foreach ($uri as $u) {
