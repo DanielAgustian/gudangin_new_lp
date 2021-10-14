@@ -32,16 +32,13 @@
 
                 <div class="item-wrap">
                     <div class="item active">
-                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat /
-                            pertanyaan pelanggan</p>
+                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat / pertanyaan pelanggan</p>
                     </div>
                     <div class="item">
-                        <p>Omzet usaha belum cukup untuk menambah infrastruktur seperti rak-rak apalagi penambahan gudang
-                        </p>
+                        <p>Omzet usaha belum cukup untuk menambah infrastruktur seperti rak-rak apalagi penambahan gudang</p>
                     </div>
                     <div class="item">
-                        <p>Habis waktu berjam-jam dalam sehari untuk pengemasan (packing) dan mencetak berlembar-lembar resi
-                            dan label</p>
+                        <p>Habis waktu berjam-jam dalam sehari untuk pengemasan (packing) dan mencetak berlembar-lembar resi dan label</p>
                     </div>
                 </div>
 
@@ -57,9 +54,7 @@
                     </div>
 
                     <div class="item">
-                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat /
-                            pertanyaan pelanggan</p>
-
+                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat / pertanyaan pelanggan</p>
                     </div>
                 </div>
 
