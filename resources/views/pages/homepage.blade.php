@@ -1,258 +1,377 @@
 @extends('master')
 
-@section('landing-content')
+@section('content')
+    <section class="home__hero">
+        <img src="{{ asset('images/ornament/hero-wave.svg') }}" alt="" class="home__hero_orn">
+        <div class="container" style="position: relative; z-index: 3">
+            <div class="inner__container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="home__hero_left">
+                            <h5>gudangin</h5>
+                            <h1>Jualan <strong>Lebih Banyak</strong> Kirim <strong>Lebih Cepat</strong> Kemanapun Tetap
+                                <strong>Lebih Hemat</strong>
+                            </h1>
+                            <h6>urus semua orderan tokomu <br>
+                                siap kirim dalam waktu 5 menit!
+                            </h6>
+                            <button class="btn">Coba Gratis <i class="fas fa-chevron-right"></i></button>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="home__hero_right">
+                            <img src="{{ asset('images/illustration/hero.png') }}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <div class="home-hero">
-        <img src="{{ asset('images/waveElement.png') }}" class="background-image">
+        <div class="custom-shape-divider-bottom-1636602785">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <section class="home__problem">
+        <h2>Kami paham <span>permasalahanmu</span> <br> <span>jalanin bisnis online</span></h2>
+
+        <div id="problem_group" style="overflow: hidden; margin-bottom: 15px">
+            <div class="problem_wrap">
+                <div class="problem_item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Nambah barang /toko = nambah admin.</span><br>Biaya operasional naik terus seiring
+                                dengan
+                                naiknya omzet
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item" style="margin-top: 50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Habis waktu berjam-jam dalam sehari</span><br>untuk pengemasan (packing) dan mencetak
+                                berlembar-lembar
+                                resi & label
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                Input secara manual, sering terjadi <span>selisih stok</span> saat stok opname
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item" style="margin-top: 50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Nambah barang /toko = nambah admin.</span><br>Biaya operasional naik terus seiring
+                                dengan
+                                naiknya omzet
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Habis waktu berjam-jam dalam sehari</span><br>untuk pengemasan (packing) dan mencetak
+                                berlembar-lembar
+                                resi & label
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item" style="margin-top: 50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                Input secara manual, sering terjadi <span>selisih stok</span> saat stok opname
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="problem_group-2" style="overflow: hidden; margin-bottom: 15px">
+            <div class="problem_wrap">
+                <div class="problem_item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                Admin <span>berulang-ulang login-logout</span>
+                                dari satu marketplace ke marketplace lain untuk membalas chat / pertanyaan pelanggan
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item" style="margin-top: 50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Omzet usaha belum cukup</span> untuk menambah infrastruktur seperti rak-rak apalagi
+                                penambahan
+                                gudang
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Nambah barang /toko = nambah admin.</span><br>Biaya operasional naik terus seiring
+                                dengan
+                                naiknya omzet
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item" style="margin-top: 50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                Admin <span>berulang-ulang login-logout</span>
+                                dari satu marketplace ke marketplace lain untuk membalas chat / pertanyaan pelanggan
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Omzet usaha belum cukup</span> untuk menambah infrastruktur seperti rak-rak apalagi
+                                penambahan
+                                gudang
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="problem_item" style="margin-top: 50px">
+                    <div class="card">
+                        <div class="card-body">
+                            <h6>
+                                <span>Nambah barang /toko = nambah admin.</span><br>Biaya operasional naik terus seiring
+                                dengan
+                                naiknya omzet
+                            </h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home__solution">
         <div class="container">
-            <div class="container-child">
-                <h1>Jualan Lebih Banyak,<br>Kirim Lebih Cepat Kemanapun,<br>Tetap Lebih Hemat</h1>
-                <h5><span class="orange-color">gudangin </span>urus semua orderan tokomu <span class="black-color">siap
-                        kirim dalam waktu 5 menit!</span></h5>
-                <button class="button-orange mt-3">COBA GRATIS</button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="home-contents">
-        <img src="{{ asset('images/waveElement-2.png') }}" alt="" class="img-bg-1">
-        <img src="{{ asset('images/waveElement-3.png') }}" alt="" class="img-bg-2">
-
-        <div class="home-division">
-
-            <div class="container mb-50">
-                <div class="container-child">
-                    <h3 class="title-division text-center">Kami paham permasalahanmu jalanin bisnis online</h3>
-
-                </div>
-
-            </div>
-            <div class="promo-carousel" id="grouploop-1">
-
-                <div class="item-wrap">
-                    <div class="item active">
-                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat /
-                            pertanyaan pelanggan</p>
+            <div class="inner__container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 home__solution_left">
+                        <img src="{{ asset('images/illustration/solution.png') }}" alt="">
                     </div>
-                    <div class="item">
-                        <p>Omzet usaha belum cukup untuk menambah infrastruktur seperti rak-rak apalagi penambahan gudang
-                        </p>
-                    </div>
-                    <div class="item">
-                        <p>Habis waktu berjam-jam dalam sehari untuk pengemasan (packing) dan mencetak berlembar-lembar resi
-                            dan label</p>
-                    </div>
-                </div>
-
-            </div>
-            <div class="promo-carousel" id="grouploop-2">
-
-                <div class="item-wrap">
-                    <div class="item active">
-                        <p>Input secara manual, sering terjadi selisih stok saat stok opname</p>
-                    </div>
-                    <div class="item">
-                        <p>Nambah barang /toko = nambah admin. Biaya operasional naik terus seiring dengan naiknya omzet</p>
-                    </div>
-
-                    <div class="item">
-                        <p>Admin berulang-ulang login-logout dari satu marketplace ke marketplace lain untuk membalas chat /
-                            pertanyaan pelanggan</p>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="home-division">
-            <div class="container">
-                <div class="container-child">
-                    <h5 class="text-explain-title">Mau Cepat, Mudah, Praktis menjalankan usaha online?</h5>
-                    <h3 class="title-division">Sini biar <span>gudangin</span> yang urusin <br class="responsive-br"> tanpa
-                        perlu keringetan!</h3>
-                    <p class="p-explain">gudangin hadir untuk memudahkan operasional bisnis online sesuai kebutuhanmu.
-                        Mulai dari manajemen gudang penyimpanan dan quality controlnya, packing, pengiriman, manajemen stok
-                        barang, apapun jenis dan besarnya usahamu. Jadi kamu bisa fokus ke pengembangan bisnis dan inovasi
-                        produk</p>
-                    <a href="" class="link">
-                        <p>Pelajari lebih lanjut mengenai Cara Kerja gudangin <img
-                                src="{{ asset('images/icons/arrow-right.svg') }}" alt=""></p>
-                    </a>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="home-division" id="benefit-gudangin">
-            <div class="container">
-                <div class="container-child">
-                    <div class="box">
-                        <h3 class="title-division">
-                            Benefit <span>gudangin</span> untukmu
-                        </h3>
-                        <div class="row">
-                            <div class="col-lg-2 col-sm-3">
-                                <div class="flex-number-box">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/icons/number-bg.png') }}" alt="">
-                                        <p>1</p>
-                                    </div>
+                    <div class="col-lg-6 home__solution_right">
+                        <h4>#gudanginAja</h4>
+                        <h2>Sini biar <span>gudangin</span> yang urusin tanpa perlu keringetan!</h2>
+                        <div class="home__solution_list">
+                            <div class="solution_list_item">
+                                <div class="sl_num">
+                                    <img src="{{ asset('images/icons/1.svg') }}" alt="">
                                 </div>
-
-                            </div>
-                            <div class="col-lg-10 col-sm-9">
-                                <p class="title-child">5 menit maksimal!</p>
-                                <p class="p-explain">Lamanya waktu yang diperlukan oleh sistem automasi untuk memproses
-                                    orderan dari saat terjadi di marketplace hingga tahap siap di pick-up kurir
-                                </p>
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                                <div class="flex-number-box">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/icons/number-bg.png') }}" alt="">
-                                        <p>2</p>
-                                    </div>
+                                <div class="sl_text">
+                                    <h6>Proses <span>lebih cepat</span></h6>
                                 </div>
-
                             </div>
-                            <div class="col-lg-10 col-sm-9">
-                                <p class="title-child">100% orderan terproses</p>
-                                <p class="p-explain">Tanpa input manual, keterlambatan maupun kesalahan pemrosesan
-                                    orderan
-                                    yang disebabkan oleh human-error terminimalisir
-                                </p>
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                                <div class="flex-number-box">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/icons/number-bg.png') }}" alt="">
-                                        <p>3</p>
-                                    </div>
+                            <div class="solution_list_item">
+                                <div class="sl_num">
+                                    <img src="{{ asset('images/icons/2.svg') }}" alt="">
                                 </div>
-
-                            </div>
-                            <div class="col-lg-10 col-sm-9">
-                                <p class="title-child">80%-90% peningkatan efisiensi pemrosesan pesanan</p>
-                                <p class="p-explain">90% pengurangan penggunaan space ruangan untuk operasional toko
-                                    dan
-                                    80% penghematan biaya (upah) admin untuk operasional toko
-                                </p>
-                            </div>
-                            <div class="col-lg-2 col-sm-3">
-                                <div class="flex-number-box">
-                                    <div class="number-box">
-                                        <img src="{{ asset('images/icons/number-bg.png') }}" alt="">
-                                        <p>4</p>
-                                    </div>
+                                <div class="sl_text">
+                                    <h6>Jalani usaha <span>lebih mudah</span></h6>
                                 </div>
-
                             </div>
-                            <div class="col-lg-10 col-sm-9">
-                                <p class="title-child">Efektivitas managemen stok</p>
-                                <p class="p-explain">Manajemen Stok yang lebih rapih dan terkontrol, karena inbound dan
-                                    outbound terjadi secara real-time
-                                </p>
+                            <div class="solution_list_item">
+                                <div class="sl_num">
+                                    <img src="{{ asset('images/icons/3.svg') }}" alt="">
+                                </div>
+                                <div class="sl_text">
+                                    <h6>Atur usaha onlinemu dengan <span>lebih praktis</span></h6>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        <div class="home-division" id="fitur-gudangin">
-            <div class="container">
-                <div class="container-child">
-                    <h3 class="title-division text-center">Fiturnya <span>gudangin</span></h3>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="box">
-                                {{-- <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon"> --}}
-
-                                <p class="title-child">Integrasi toko online dari beberapa marketplace sekaligus</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box">
-                                {{-- <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon"> --}}
-
-                                <p class="title-child">Agregasi SKU Produk, data orderan/transaksi, jumlah pembeli dan
-                                    data
-                                    pembeli</p>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="box text-center">
-                                {{-- <img src="{{ asset('images/icons/products-icon-13.png') }}" alt="icon"> --}}
-
-                                <p class="title-child">Agregasi chat dari beberapa marketplace sehingga admin tidak perlu
-                                    lagi login-logout banyak akun</p>
-                            </div>
-                        </div>
+    <section class="home__works">
+        <div class="container">
+            <div class="inner__container">
+                <div class="row">
+                    <div class="col-lg-7 home__works_left">
+                        <h4>#gudanginAja</h4>
+                        <h2>Gimana sih <span>cara kerja gudangin?</span></h2>
+                        <h6>Gudangin
+                            hadir untuk memudahkan operasional bisnis online sesuai kebutuhanmu. Mulai dari manajemen gudang
+                            penyimpanan dan quality controlnya, packing, pengiriman, manajemen stok barang, apapun jenis dan
+                            besarnya usahamu.
+                            Jadi kamu bisa fokus ke pengembangan bisnis dan inovasi produk</h6>
                     </div>
-                </div>
-
-            </div>
-
-        </div>
-
-        <div class="home-division">
-
-            <div class="container">
-                <div class="stay-at-home-container">
-                    <h5 class="text-explain-title"> Kamu stay at home kembangin bisnisnya</h5>
-                    <h3 class="title-division">
-                        Biar Kami yang urusin <br>
-                        Pick, Pack, Ship Dagangan kamu!
-                    </h3>
-                    <div class="flex">
-                        <button class="button-orange">Ayo mulai, GRATIS!</button>
+                    <div class="col-lg-5 home__works_right">
+                        <button class="sec">Pelajari Sekarang</button>
+                        <button class="prm">Gabung Sekarang</button>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <div class="custom-shape-divider-bottom-1636615399">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
 
+    <section class="home__fitur">
+        <div class="container" style="position: relative; z-index: 3">
+            <div class="inner__container">
+                <h2>Fiturnya <span>gudangin</span></h2>
+
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/illustration/fitur-1.png') }}" alt="">
+                                <h6>Integrasi toko online dari beberapa marketplace sekaligus</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/illustration/fitur-2.png') }}" alt="">
+                                <h6>Agregasi SKU Produk, data orderan/transaksi, jumlah pembeli dan data pembeli</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/illustration/fitur-3.png') }}" alt="">
+                                <h6>Agregasi chat dari beberapa marketplace sehingga admin tidak perlu lagi login-logout
+                                    banyak akun</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home__benefit">
+        <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn">
+        <div class="container" style="position: relative; z-index: 3">
+            <div class="inner__container">
+                <div class="row">
+                    <div class="col-lg-6 home__benefit_left">
+                        <h4>#gudanginAja</h4>
+                        <h2>Benefit <span>gudangin</span> untukmu</h2>
+
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/icons/benefit-1.png') }}" alt="">
+                                <h5>5 menit maksimal!</h5>
+                                <h6>Lamanya waktu yang diperlukan oleh sistem automasi untuk memproses orderan dari saat
+                                    terjadi di marketplace hingga tahap siap di pick-up kurir
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/icons/benefit-2.png') }}" alt="">
+                                <h5>80%-90% peningkatan efesiensi pemrosesan pesanan</h5>
+                                <h6>90% pengurangan penggunaan space ruangan untuk operasional toko dan 80% penghematan
+                                    biaya
+                                    (upah) admin untuk operasional toko
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 home__benefit_right">
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/icons/benefit-3.png') }}" alt="">
+                                <h5>100% orderan terproses</h5>
+                                <h6>Tanpa input manual, keterlambatan maupun kesalahan pemrosesan orderan yang disebabkan
+                                    oleh human-error terminimalisir
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-body">
+                                <img src="{{ asset('images/icons/benefit-4.png') }}" alt="">
+                                <h5>Efektivitas managemen stok</h5>
+                                <h6>Manajemen Stok yang lebih rapih dan terkontrol, karena inbound dan outbound terjadi
+                                    secara real-time</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home__footer">
+        <div class="container">
+            <div class="inner__container">
+                <div class="card">
+                    <div class="card-body">
+                        asdasdasd
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 @endsection
 
 
 @section('pageJS')
-    <script src="{{ asset('plugin/marquee-scroll/dist/grouploop-1.0.0.min.js') }}"></script>
+    <script src="{{ asset('plugin/marquee-scroll/dist/grouploop-1.0.3.min.js') }}"></script>
     <script>
-        $('#grouploop-1').grouploop({
-            // animation speed
-            velocity: 1,
-            // false = from left to right
+        $("#problem_group").grouploop({
+            velocity: 0.5,
             forward: true,
-            // default selectors
-            childNode: ".item",
-            childWrapper: ".item-wrap",
-            // enable pause on hover
-            pauseOnHover: true,
-            // stick the first item
-            stickFirstItem: false,
-            // callback
-            complete: null
-        });
+            childNode: ".problem_item",
+            childWrapper: ".problem_wrap",
+            pauseOnHover: false,
+            stickFirstItem: false
+        })
 
-        $('#grouploop-2').grouploop({
-            // animation speed
-            velocity: 1,
-            // false = from left to right
+        $("#problem_group-2").grouploop({
+            velocity: 0.5,
             forward: false,
-            // default selectors
-            childNode: ".item",
-            childWrapper: ".item-wrap",
-            // enable pause on hover
-            pauseOnHover: true,
-            // stick the first item
-            stickFirstItem: false,
-            // callback
-            complete: null
-        });
+            childNode: ".problem_item",
+            childWrapper: ".problem_wrap",
+            pauseOnHover: false,
+            stickFirstItem: false
+        })
     </script>
 @endsection

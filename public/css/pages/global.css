@@ -1,11 +1,41 @@
-body{
-    font-family: 'Poppins', sans-serif;
+@font-face {
+    font-family: gilroy;
+    src: url(../../fonts/Gilroy-Regular.ttf);
 }
 
-.mb-50{
-    margin-bottom: 50px !important;
+@font-face {
+    font-family: gilroy-bold;
+    src: url(../../fonts/Gilroy-Bold.ttf);
 }
 
-.mb-15{
-    margin-bottom: 15px!important;
+@font-face {
+    font-family: gilroy-semibold;
+    src: url(../../fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+    font-family: gilroy-medium;
+    src: url(../../fonts/Gilroy-Medium.ttf);
+}
+
+body {
+    font-family: gilroy, serif;
+    -webkit-font-smoothing: antialiased;
+    background: linear-gradient(180deg, #fef8f5 0%, #fffdfd 100%);
+}
+
+.inner__container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+span {
+    color: #e36d1c;
+    font-family: gilroy-bold;
+}
+
+@media screen and (max-width: 768px) {
+    .inner__container {
+        width: 100%;
+    }
 }
