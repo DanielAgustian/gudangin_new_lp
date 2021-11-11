@@ -5,18 +5,28 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Gudangin Cloud Warehouse">
-    <meta name="keywords" content="warehouse,cloud">
-    <meta name="author" content="stacks">
-    <!-- The above 6 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description"
+        content="Gudangin urus semua orderan tokomu siap kirim dalam waktu 5 menit, jualan lebih banyak, kirim lebih cepat kemanapun, tetap lebih hemat." />
+    <meta name="keywords"
+        content="cloud warehouse, marketplace integration, manajemen gudang penyimpanan, quality control packing, manajemen stok barang, agregasi chat marketplace" />
+    <meta name="robots" content="index, follow" />
+    <meta name="author" content="Gudangin.id" />
+    <meta name="google-site-verification" content="TlSlz4I9mVi94EWXzd_O2XWndckv1Y5xC-MnRuZl6Es" />
 
     <!-- Title -->
-    <title>Gudangin</title>
+    <title>Gudangin | Cloud Warehouse | Marketplace Integration</title>
+
+    {{-- Favicon --}}
+    <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('favicon/favicon-16x16.png') }}">
+
 
     <!-- Styles -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Theme Styles -->
     <link href="{{ asset('/css/custom.css') }}" rel="stylesheet" type="text/css">

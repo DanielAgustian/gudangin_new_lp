@@ -34,9 +34,27 @@
                     class="shape-fill"></path>
             </svg>
         </div>
+
+        <div class="custom-shape-divider-bottom-1636602786">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+        <div class="custom-shape-divider-bottom-1636602787">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path
+                    d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+
+
     </section>
 
-    <section class="home__problem">
+    <section class="home__problem" data-aos="fade-up">
         <h2>Kami paham <span>permasalahanmu</span> <br> <span>jalanin bisnis online</span></h2>
 
         <div id="problem_group" style="overflow: hidden; margin-bottom: 15px">
@@ -177,7 +195,7 @@
     </section>
 
     <section class="home__solution">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="inner__container">
                 <div class="row align-items-center">
                     <div class="col-lg-6 home__solution_left">
@@ -219,7 +237,7 @@
     </section>
 
     <section class="home__works">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
             <div class="inner__container">
                 <div class="row">
                     <div class="col-lg-7 home__works_left">
@@ -249,7 +267,7 @@
     </section>
 
     <section class="home__fitur">
-        <div class="container" style="position: relative; z-index: 3">
+        <div class="container" data-aos="fade-up" style="position: relative; z-index: 3">
             <div class="inner__container">
                 <h2>Fiturnya <span>gudangin</span></h2>
 
@@ -286,7 +304,7 @@
 
     <section class="home__benefit">
         <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn">
-        <div class="container" style="position: relative; z-index: 3">
+        <div class="container" style="position: relative; z-index: 3" data-aos="fade-up">
             <div class="inner__container">
                 <div class="row">
                     <div class="col-lg-6 home__benefit_left">
@@ -337,12 +355,14 @@
         </div>
     </section>
 
-    <section class="home__footer">
+    <section class="home__footer" data-aos="fade-up">
         <div class="container">
             <div class="inner__container">
                 <div class="card">
                     <div class="card-body">
-                        asdasdasd
+                        <p>Kamu stay at home kembangin bisnisnya</p>
+                        <h2>Biar Kami yang <span>kelola dan kembangkan</span> usaha online Anda!</h2>
+                        <button class="btn">Coba Gratis <i class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -355,6 +375,11 @@
 
 @section('pageJS')
     <script src="{{ asset('plugin/marquee-scroll/dist/grouploop-1.0.3.min.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
     <script>
         $("#problem_group").grouploop({
             velocity: 0.5,

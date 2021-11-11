@@ -80,10 +80,50 @@
     position: relative;
     display: block;
     width: calc(127% + 1.3px);
-    height: 152px;
+    height: 150px;
 }
 
 .custom-shape-divider-bottom-1636602785 .shape-fill {
+    fill: #fffaf8;
+}
+
+.custom-shape-divider-bottom-1636602786 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1636602786 svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 125px;
+}
+
+.custom-shape-divider-bottom-1636602786 .shape-fill {
+    fill: #e36d1c;
+}
+
+.custom-shape-divider-bottom-1636602787 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.custom-shape-divider-bottom-1636602787 svg {
+    position: relative;
+    display: block;
+    width: calc(127% + 1.3px);
+    height: 100px;
+}
+
+.custom-shape-divider-bottom-1636602787 .shape-fill {
     fill: #fffaf8;
 }
 
@@ -367,6 +407,7 @@
 .home__footer {
     background: #ffffff;
     position: relative;
+    padding: 50px 0;
 }
 
 .home__footer .card {
@@ -376,13 +417,49 @@
     background-size: 100%;
     background-repeat: no-repeat;
     height: 300px;
-    /* border: transparent; */
+    border: transparent;
 }
 
-.home__footer.card-body p {
+.home__footer .card-body {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.home__footer .card-body p {
     font-family: gilroy-medium;
     font-size: 16px;
     line-height: 19px;
     text-align: center;
     color: rgba(255, 255, 255, 0.7);
+    margin: 0;
+}
+
+.home__footer .card-body h2 {
+    font-family: gilroy-medium;
+    font-size: 38px;
+    line-height: 45px;
+    color: #ffffff;
+    text-align: center;
+    width: 65%;
+    margin-bottom: 25px;
+}
+.home__footer .card-body span {
+    color: #fff;
+}
+
+.home__footer .card-body button {
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+    border-radius: 8px;
+
+    font-family: gilroy-semibold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding: 17px;
 }
