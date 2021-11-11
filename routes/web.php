@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,7 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', '@landing');
-Route::get('/', 'PageController@homePage')->name('homePage');
-
-Route::get('/harga', 'PageController@pricingPage')->name('pricingPage');
+Route::get('/', [PageController::class, 'homePage'])->name('homePage');
+Route::get('/harga', [PageController::class, 'pricingPage'])->name('pricingPage');

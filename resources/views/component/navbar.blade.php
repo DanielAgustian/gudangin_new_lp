@@ -3,7 +3,7 @@
         <div class="landing_navbar">
             <div class="division">
                 <div class="landing_nav_logo">
-                    <a href="#">
+                    <a href="{{ route('homePage') }}">
                         <img src="{{ asset('images/navbar_logo.svg') }}" alt="logo">
                     </a>
                 </div>

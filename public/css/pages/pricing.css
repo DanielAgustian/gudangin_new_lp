@@ -1,315 +1,144 @@
-.page-content{
-    overflow: hidden;
-    position: relative;
+.pricing__hero {
+    background: #e36d1c;
     padding-top: 150px;
-    padding-bottom: 150px;
-}
-
-.page-content .background-image-1{
-    position: absolute;
-    top: 0%;
-    left: 0%;
-    transform: translate(0%, -10%);
-    object-fit: contain;
-    pointer-events: none;
-}
-
-.page-content .background-image-2{
-    position: absolute;
-    z-index: -1;
-    right: 0%;
-    top: 50%;
-    transform: translate(1%, -22%);
-    pointer-events: none;
-    object-fit: contain;
-    
-}
-
-.page-content .container-child{
-    width: 80%;
-    margin: 0 auto;
-}
-.page-content .page-title-division{
-    margin-bottom: 65px;
-}
-
-.page-content .page-division{
-    margin-bottom: 100px;
-}
-
-.page-title{
-    font-size: 42px;
-    font-weight: 700;
-    color: black;
+    padding-bottom: 300px;
+    position: relative;
     text-align: center;
-    line-height: 1.6;
+    color: #ffffff;
 }
-.page-box{
-    width: 60%;
-    margin: 0 auto;
-}
-.page-exp{
+
+.pricing__hero h6 {
+    font-family: gilroy;
     font-size: 16px;
-    margin-bottom: 0px;
-    color: rgba(0, 0, 0, 0.5);
-    text-align: center;
-    line-height: 1.6;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
 }
 
-.page-exp span{
-    color: #F7761E;
+.pricing__hero h1 {
+    font-family: gilroy-bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #ffffff;
 }
 
-/* Pricing Box Row */
+.pricing__hero p {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 65%;
+    margin: 15px auto;
+}
 
-.pricing-box{
-    padding: 25px;
-    
-    background: white;
-    border-radius: 20px;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
+.pricing__card {
+    background: linear-gradient(180deg, #fef8f5 0%, #fffdfd 100%);
+    margin-top: -200px;
+}
+
+.pricing__card .card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.pricing__card .pricing__amount {
     margin-bottom: 25px;
-    
-    box-shadow: 0px 6px 6px rgba(191, 144, 0, 0.1);
 }
 
-.pricing-box.starter, .pricing-box.business{
-    border: 1px solid rgba(191, 144, 0, 1)
-}
-.pricing-box.premium{
-    
-    border: 1px solid #F7761E; 
-    border-top: 10px solid #F7761E;  
+.pricing__card .pricing__amount h5 {
+    font-family: gilroy-bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3c3c3c;
 }
 
-.pricing-box h4{
-    font-size: 20px;
+.pricing__card .pricing__amount h3 {
+    font-family: gilroy-bold;
+    font-size: 28px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0;
+}
+
+.pricing__card .pricing__amount span {
+    font-family: gilroy-medium;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.pricing__card .pricing__amount button {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: gilroy-semibold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    padding: 2px 25px;
+}
+
+.pricing__card .pricing__amount .bestt {
+    background: #f7761e;
+    border-radius: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -50px;
+}
+.pricing__card .pricing__amount .bestt .best_label {
+    background: #fdc27b;
+    font-family: gilroy-bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #f7761e;
+    width: 160px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-top: -50px;
     margin-bottom: 25px;
-    margin-top: 15px;
-    font-weight: 500;
-}
-.pricing-box.starter h4{
-    color: black;
-    
 }
 
-.pricing-box.business h4{
-    color:rgba(191, 144, 0, 1);
-}
-
-.pricing-box.premium h4{
-    margin-top: 5px !important;
-    color: #F7761E;
-}
-
-.pricing-box h3{
-    color: black;
-    font-size: 34px;
-    font-weight: 500;
-    margin-bottom: 1px;
-}
-
-.pricing-box .monthly{
+.pricing__card .card h6 {
+    font-family: gilroy-semibold;
     font-size: 14px;
-    color: black;
-    font-weight: 500;
+    line-height: 18px;
+    color: #3c3c3c;
+    margin: 0;
 }
 
-.pricing-box button{
-    width: 100%;
-    border-radius: 10px;
-    padding: 8px 15px;
+.pricing__card .pricing__grey {
+    background: rgba(16, 77, 91, 0.1);
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.pricing__pack {
+    padding: 50px 0;
+}
+
+.pricing__pack h2 {
+    font-family: gilroy-bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.pricing__pack table {
+    background: #ffffff;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.pricing__pack table tr.pricing__big td {
+    font-family: gilroy-bold;
     font-size: 14px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-weight: 500;
-}
-
-.pricing-box.starter button{
-    border: 1px solid black;
-    background-color: white;
-    color: black;
-}
-
-.pricing-box.premium button{
-    border: 1px solid #F7761E;
-    background-color: #F7761E;
-    color: white;
-}
-
-.pricing-box.business button{
-    border: 1px solid rgba(191, 144, 0, 1);
-    background-color: rgba(191, 144, 0, 1);
-    color: white;
-    
-}
-
-.pricing-box .withlink{
-    color: black;
-    font-size: 11px;
-    text-align: center;
-    margin-bottom: 30px;
-}
-
-.pricing-box a{
-    text-decoration-line: underline;
-}
-.pricing-box.starter a{
-    color: black;
-}
-
-.pricing-box.premium a{
-    color: #F7761E;
-}
-.pricing-box.business a{
-    color: rgba(191, 144, 0, 1);
-}
-
-.pricing-box .feature{
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.5);
-    align-items: center;
-    margin-bottom: 0px;
-}
-
-
-.division-title{
-    font-size: 32px;
-    font-weight: 600;
-    color: black;
-    text-align: center;
-    margin-bottom: 45px;
-}
-
-/* Table */
- 
-.table-pricing{
-    
-    width: 100%;
-    table-layout: fixed;
-    border-radius: 15px;
-}
-.table-pricing tr td{
-    
-    border: 1px solid rgba(191, 144, 0, 0.3);
-}
-.table-pricing .size td{
-    color: rgba(0, 0, 0, 0.5);
-    font-size: 11px;
-    text-align: center;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    
-}
-
-.table-pricing .title td{
-    background-color: #F7761E;
-    font-size: 14px;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-
-.table-pricing .package td{
-    
-    font-size: 14px;
-
-    text-align: center;
-    color: black;
-    font-weight: bold;
-    padding-bottom: 25px;
-    padding-top: 25px;
-}
-
-.table-pricing tr:first-child td {
-    border-top: 0
-}
-.table-pricing tr:last-child td {
-    border-bottom: 0
-}
-.table-pricing tr td:first-child
-{
-    border-left:0
-}
-.table-pricing tr td:last-child
-{
-    border-right:0
-}
-
-.div-table{
-    border-radius: 20px;
-    width: 100%;
-    padding: 1px;
-    background-color: #F7761E;
-    box-shadow: 0px 21px 20px rgba(191, 144, 0, 0.1);
-}
-.white-table{
-    border-radius: 20px;
-    width: 100%;
-    
-    background-color: white;
-}
-
-
-/*  RESPONSIVE  */
-
-
-
-@media (max-width:991px) {
-    .page-box{
-        width: 70%;
-        
-    }
-    .page-content .container-child{
-        width: 85%;
-        margin: 0 auto;
-    }
-    .page-title{
-        font-size: 40px;
-    }
-
-    .page-exp{
-        font-size: 15px;
-    }
-    .division-title{
-        font-size: 30px;
-    }
-}
-
-@media (max-width:767px) {
-    .page-box{
-        width: 80%;
-    }
-    .page-content .container-child{
-        width: 90%;
-        margin: 0 auto;
-    }
-    .page-title{
-        font-size: 36px;
-    }
-    .page-exp{
-        font-size: 14px;
-    }
-    .division-title{
-        font-size: 28px;
-    }
-}
-
-@media (max-width:575px) {
-    .page-box{
-        width: 90%;
-    }
-    .page-title{
-        font-size: 32px;
-    }
-    .page-exp{
-        font-size: 13px;
-    }
-    .division-title{
-        font-size: 24px;
-    }
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    vertical-align: middle;
 }

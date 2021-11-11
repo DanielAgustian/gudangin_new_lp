@@ -63,8 +63,17 @@
     border: 1px solid red;
 } */
 
+.home__hero_right {
+    position: relative;
+    /* border: 1px solid red; */
+    height: 500px;
+}
+
 .home__hero_right img {
-    width: 100%;
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+    /* width: 120%; */
 }
 
 .custom-shape-divider-bottom-1636602785 {
@@ -100,7 +109,7 @@
     position: relative;
     display: block;
     width: calc(127% + 1.3px);
-    height: 125px;
+    height: 100px;
 }
 
 .custom-shape-divider-bottom-1636602786 .shape-fill {
@@ -120,7 +129,7 @@
     position: relative;
     display: block;
     width: calc(127% + 1.3px);
-    height: 100px;
+    height: 50px;
 }
 
 .custom-shape-divider-bottom-1636602787 .shape-fill {
@@ -226,7 +235,7 @@
 
 .home__works {
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 150px;
 
     background: url("../../images/ornament/section-bg.png");
     background-repeat: no-repeat;

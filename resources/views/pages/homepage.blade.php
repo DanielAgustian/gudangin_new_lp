@@ -250,7 +250,8 @@
                             Jadi kamu bisa fokus ke pengembangan bisnis dan inovasi produk</h6>
                     </div>
                     <div class="col-lg-5 home__works_right">
-                        <button class="sec">Pelajari Sekarang</button>
+                        <button class="sec" data-toggle="modal" data-target="#exampleModal">Pelajari
+                            Sekarang</button>
                         <button class="prm">Gabung Sekarang</button>
                     </div>
                 </div>
@@ -370,6 +371,22 @@
     </section>
 
 
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1>asdasdd</h1>
+                    <h1>asdasdd</h1>
+                    <h1>asdasdd</h1>
+                    <h1>asdasdd</h1>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 
