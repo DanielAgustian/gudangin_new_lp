@@ -1,0 +1,144 @@
+.pricing__hero {
+    background: #e36d1c;
+    padding-top: 150px;
+    padding-bottom: 300px;
+    position: relative;
+    text-align: center;
+    color: #ffffff;
+}
+
+.pricing__hero h6 {
+    font-family: gilroy;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+.pricing__hero h1 {
+    font-family: gilroy-bold;
+    font-size: 48px;
+    line-height: 64px;
+    color: #ffffff;
+}
+
+.pricing__hero p {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    width: 65%;
+    margin: 15px auto;
+}
+
+.pricing__card {
+    background: linear-gradient(180deg, #fef8f5 0%, #fffdfd 100%);
+    margin-top: -200px;
+}
+
+.pricing__card .card {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.pricing__card .pricing__amount {
+    margin-bottom: 25px;
+}
+
+.pricing__card .pricing__amount h5 {
+    font-family: gilroy-bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #3c3c3c;
+}
+
+.pricing__card .pricing__amount h3 {
+    font-family: gilroy-bold;
+    font-size: 28px;
+    line-height: 30px;
+    color: #000000;
+    margin: 0;
+}
+
+.pricing__card .pricing__amount span {
+    font-family: gilroy-medium;
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+}
+
+.pricing__card .pricing__amount button {
+    background: #ffffff;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-family: gilroy-semibold;
+    font-size: 12px;
+    line-height: 18px;
+    color: #000000;
+    padding: 2px 25px;
+}
+
+.pricing__card .pricing__amount .bestt {
+    background: #f7761e;
+    border-radius: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: -50px;
+}
+.pricing__card .pricing__amount .bestt .best_label {
+    background: #fdc27b;
+    font-family: gilroy-bold;
+    font-size: 18px;
+    line-height: 21px;
+    color: #f7761e;
+    width: 160px;
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0 auto;
+    margin-top: -50px;
+    margin-bottom: 25px;
+}
+
+.pricing__card .card h6 {
+    font-family: gilroy-semibold;
+    font-size: 14px;
+    line-height: 18px;
+    color: #3c3c3c;
+    margin: 0;
+}
+
+.pricing__card .pricing__grey {
+    background: rgba(16, 77, 91, 0.1);
+    border-radius: 50px;
+    padding: 1rem;
+}
+
+.pricing__pack {
+    padding: 50px 0;
+}
+
+.pricing__pack h2 {
+    font-family: gilroy-bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 25px;
+}
+
+.pricing__pack table {
+    background: #ffffff;
+    box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+.pricing__pack table tr.pricing__big td {
+    font-family: gilroy-bold;
+    font-size: 14px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    vertical-align: middle;
+}
