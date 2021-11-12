@@ -68,10 +68,20 @@
 }
 
 @media screen and (max-width: 768px) {
+    .navbar__wrapper {
+        position: fixed;
+        z-index: 99;
+        background: #ffffff;
+        width: 100%;
+        box-shadow: 0px 5px 20px rgba(191, 144, 0, 0.1);
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
     .landing_nav_menu {
         display: none;
     }
-    .landing_navbar .division {
+    /* .landing_navbar .division {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -112,5 +122,5 @@
     .landing_sidebar_menu a.active {
         color: #f7761e;
         font-weight: 700;
-    }
+    } */
 }

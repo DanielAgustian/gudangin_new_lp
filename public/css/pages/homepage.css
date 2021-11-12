@@ -59,9 +59,6 @@
     background: #fff;
     color: #e36d1c;
 }
-/* .home__hero_right {
-    border: 1px solid red;
-} */
 
 .home__hero_right {
     position: relative;
@@ -73,7 +70,6 @@
     position: absolute;
     bottom: -50px;
     right: -100px;
-    /* width: 120%; */
 }
 
 .custom-shape-divider-bottom-1636602785 {
@@ -136,6 +132,131 @@
     fill: #fffaf8;
 }
 
+.hero__left {
+    order: 1;
+}
+
+.hero__right {
+    order: 2;
+}
+
+@media screen and (max-width: 1024px) {
+    .home__hero_orn {
+        width: 600px;
+    }
+
+    .home__hero_left {
+        width: 100%;
+    }
+
+    .home__hero_left h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .home__hero_left h1 {
+        font-size: 32px;
+        line-height: 46px;
+    }
+
+    .home__hero_left h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .home__hero_left button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 13px;
+    }
+    .home__hero_left button i {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 12px;
+    }
+
+    .home__hero_right {
+        position: relative;
+        /* border: 1px solid red; */
+        height: 500px;
+    }
+
+    .home__hero_right img {
+        position: absolute;
+        bottom: 0;
+        right: -50px;
+        width: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home__hero_orn {
+        width: 500px;
+    }
+
+    .home__hero {
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+
+    .hero__left {
+        order: 2;
+    }
+
+    .hero__right {
+        order: 1;
+    }
+
+    .home__hero_right {
+        position: relative;
+        height: 400px;
+    }
+
+    .home__hero_right img {
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home__hero {
+        padding-top: 50px;
+        padding-bottom: 175px;
+    }
+
+    .home__hero_left h5 {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .home__hero_left h1 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .home__hero_left h6 {
+        font-size: 14px;
+        line-height: 16px;
+    }
+
+    .home__hero_left button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+    }
+
+    .home__hero_right {
+        height: 350px;
+    }
+
+    .home__hero_right img {
+        width: 300px;
+    }
+}
+
 /* HOME PROBLEM */
 .home__problem h2 {
     font-family: gilroy-semibold, serif;
@@ -189,6 +310,33 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 1024px) {
+    .home__problem h2 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .home__problem h2 {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 15px;
+    }
+
+    .problem_item .card {
+        min-height: 125px;
+        max-width: 400px;
+        width: 300px;
+    }
+
+    .problem_item .card-body h6 {
+        font-size: 14px;
+        line-height: 18px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
 @media (min-width: 768px) {
     .problem_wrap {
         width: 200%;
@@ -207,7 +355,7 @@
 }
 
 .home__solution_right h2 {
-    font-family: Gilroy-SemiBold;
+    font-family: gilroy-semibold;
     font-size: 34px;
     line-height: 42px;
     color: #000000;
@@ -229,6 +377,38 @@
     font-size: 18px;
     line-height: 21px;
     color: #333333;
+}
+
+@media screen and (max-width: 1024px) {
+}
+
+@media screen and (max-width: 425px) {
+    .home__solution_left {
+        text-align: center;
+    }
+    .home__solution_left img {
+        width: 250px;
+    }
+    .home__solution_right h4 {
+        font-size: 18px;
+        line-height: 22px;
+    }
+
+    .home__solution_right h2 {
+        font-size: 28px;
+        line-height: 32px;
+        color: #000000;
+    }
+    .solution_list_item {
+        margin-bottom: 15px;
+    }
+    .solution_list_item .sl_num {
+        margin-right: 20px;
+    }
+    .solution_list_item .sl_text h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
 }
 
 /* HOME WORKS */
@@ -298,6 +478,51 @@
     color: #ffffff;
 }
 
+@media screen and (max-width: 425px) {
+    .home__works {
+        padding-top: 50px;
+        padding-bottom: 100px;
+
+        background: url("../../images/ornament/section-bg.png");
+        background-repeat: no-repeat;
+        background-position: right;
+        background-size: 400px;
+        position: relative;
+    }
+
+    .home__works_left h4 {
+        font-size: 20px;
+        line-height: 26px;
+        color: #000000;
+    }
+
+    .home__works_left h2 {
+        font-family: gilroy-medium;
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .home__works_left h6 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
+    .home__works_right {
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .home__works_right button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 10px;
+        width: 200px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        border-radius: 8px;
+    }
+}
+
 .custom-shape-divider-bottom-1636615399 {
     position: absolute;
     bottom: 0;
@@ -354,10 +579,35 @@
     color: #e36d1c;
 }
 
+@media screen and (max-width: 425px) {
+    .home__fitur h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .home__fitur .row .col-lg-4 {
+        margin-bottom: 15px;
+    }
+
+    .home__fitur .card-body {
+        text-align: center;
+    }
+
+    .home__fitur .card img {
+        width: 250px;
+    }
+
+    .home__fitur .card h6 {
+        font-size: 14px;
+        line-height: 18px;
+    }
+}
+
 /* HOME BENEFIT */
 .home__benefit {
     background: #ffffff;
     position: relative;
+    overflow: hidden;
 }
 
 .home__benefit_orn {
@@ -412,6 +662,36 @@
     color: rgba(0, 0, 0, 0.5);
 }
 
+@media screen and (max-width: 425px) {
+    .home__benefit_left h4 {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .home__benefit_left h2 {
+        font-size: 28px;
+        line-height: 32px;
+    }
+
+    .home__benefit .card-body img {
+        margin-bottom: 15px;
+        width: 50px;
+    }
+
+    .home__benefit .card-body h5 {
+        font-family: gilroy-bold;
+        font-size: 18px;
+        line-height: 24px;
+        color: #f7761e;
+    }
+    .home__benefit .card-body h6 {
+        font-family: gilroy-medium;
+        font-size: 14px;
+        line-height: 20px;
+        color: rgba(0, 0, 0, 0.5);
+    }
+}
+
 /* HOME FOOTER */
 .home__footer {
     background: #ffffff;
@@ -420,21 +700,17 @@
 }
 
 .home__footer .card {
-    background: url("../../images/ornament/footer-orn.png");
-    background-size: 100%;
-    background-position: center;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    height: 300px;
+    background: #e36d1c;
     border: transparent;
+    border-radius: 12px;
 }
 
 .home__footer .card-body {
-    /* border: 1px solid red; */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 2rem;
 }
 
 .home__footer .card-body p {
@@ -471,4 +747,27 @@
     text-transform: uppercase;
     color: #ffffff;
     padding: 17px;
+}
+
+@media screen and (max-width: 425px) {
+    .home__footer .card-body {
+        padding: 1rem;
+    }
+    .home__footer .card-body p {
+        font-family: gilroy-medium;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .home__footer .card-body h2 {
+        font-size: 24px;
+        line-height: 30px;
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+    .home__footer .card-body button {
+        font-size: 14px;
+        line-height: 18px;
+        padding: 12px;
+    }
 }

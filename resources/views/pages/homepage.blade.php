@@ -6,7 +6,7 @@
         <div class="container" style="position: relative; z-index: 3">
             <div class="inner__container">
                 <div class="row align-items-center">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 hero__left">
                         <div class="home__hero_left">
                             <h5>gudangin</h5>
                             <h1>Jualan <strong>Lebih Banyak</strong> Kirim <strong>Lebih Cepat</strong> Kemanapun Tetap
@@ -18,7 +18,7 @@
                             <button class="btn">Coba Gratis <i class="fas fa-chevron-right"></i></button>
                         </div>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 hero__right">
                         <div class="home__hero_right">
                             <img src="{{ asset('images/illustration/hero.png') }}" alt="">
                         </div>
