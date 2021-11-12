@@ -18,6 +18,7 @@
     line-height: 169px;
     text-align: center;
     transition: 0.5s all;
+    margin: 0;
 }
 
 .coming__soon h3 {
@@ -32,7 +33,7 @@
 }
 
 .coming__soon_img {
-    height: 30vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
