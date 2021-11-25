@@ -3,14 +3,19 @@
 @section('content')
     <section class="pricing__hero">
         <div class="container">
-            <div class="inner__container">
-                <h6>pricing plan</h6>
-                <h1>gudangin</h1>
+            <div class="row">
+                <div class="col-md-6 col-12">
+                    <h1>gudangin</h1>
 
-                <p>Sama <strong style="color: #ffffff">gudangin</strong>, kamu hanya perlu membayar sesuai dengan kebutuhan
-                    dan
-                    besarnya usaha kamu saat
-                    ini.</p>
+                    <p>
+                        Jualan Lebih Banyak, <br>
+                        Kirim Lebih Cepat <br>
+                        Kemanapun Tetap Lebih Hemat
+                    </p>
+                </div>
+                <div class="col-md-6 col-12">
+
+                </div>
             </div>
         </div>
         <div class="custom-shape-divider-bottom-1636602785">
@@ -38,92 +43,275 @@
         </div>
     </section>
 
-    <section class="pricing__card">
-        <div class="container">
-            <div class="inner__container">
-                <div class="card">
-                    <div class="card-body">
+    <section class="home__problem fitur">
+        <h2>Fitur <span>gudangin</span></h2>
+        <p class="text-center">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit ut aliquam, purus <br> sit amet luctus venenatis, lectus
+            magna fringilla urna, porttitor
+        </p>
+        <div id="problem_group">
+            <div class="row justify-content-center">
+                <div class="col-lg-6 col-12">
+                    <div class="fitur__item">
+                        <div class="position-absolute corner__box" style="z-index: 1">
+                            <img src="{{ asset('images/landing-page/fitur1.png') }}" alt="gudangin">
+                        </div>
+                        <div class="card position-relative">
+                            <div class="bg__card_corner">
+                                <img src="{{ asset("images/landing-page/fitur_b1.png") }}" alt="gudangin">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="number mr-3">
+                                        01
+                                    </div>
+                                    <div>
+                                        <h5>
+                                            Product & Inventory Aggregation
+                                        </h5>
+                                        <p class="muted">
+                                            Integrasikan produk dan stok yang ada pada toko e-commercemu dan semuanya akan
+                                            terhubung secara otomatis
+                                        </p>
+                                        <div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
 
-                        <div class="row align-items-center text-center pricing__amount">
-                            <div class="col-3">
+                                                <p>
+                                                    Produk yang sama dapat kamu taruh pada platform e-commerce
+                                                    dan toko yang
+                                                    berbeda
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
 
-                            </div>
-                            <div class="col-3">
-                                <h5>Starter</h5>
-                                <h3>Rp 239,200</h3>
-                                <span>Biaya bulanan</span>
-                                <div style="margin-top: 25px">
-                                    <button>Coba Sekarang</button>
-                                    <br>
-                                    <span>atau <a href="#" style="color: #000000;">Beli Sekarang</a></span>
-                                </div>
-                            </div>
-                            <div class="col-3 bestt">
-                                <div class="best_label">Best Value</div>
-                                <h5 style="color:#ffffff">Premium</h5>
-                                <h3 style="color:#ffffff">Rp 559,200</h3>
-                                <span style="color:#ffffff">Biaya bulanan</span>
-                                <div style="margin-top: 25px">
-                                    <button style="border: 1px solid #fff; background:#f7761e; color: #fff ">Coba
-                                        Sekarang</button>
-                                    <br>
-                                    <span style="color:#ffffff">atau <a href="#" style="color:#ffffff">Beli
-                                            Sekarang</a></span>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <h5 style="color: #BF9000;">Business</h5>
-                                <h3>Rp 1,119,200</h3>
-                                <span>Biaya bulanan</span>
-                                <div style="margin-top: 25px">
-                                    <button style="background: #BF9000; border: transparent">Coba Sekarang</button>
-                                    <br>
-                                    <span>atau <a href="#" style="color: #BF9000;">Beli Sekarang</a></span>
+                                                <p>
+                                                    Setiap produk serupa yang terkoneksi pada induk produk di
+                                                    gudangin akan
+                                                    memiliki jumlah yang sama
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Menambah, memperbaharui, dan mengatur produk pada
+                                                    e-commerce yang berbeda dalam satu dashboard
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+                                                <p>
+                                                    Notifikasi untuk restok saat stok barang sudah menipis
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="fitur__item">
+                        <div class="position-absolute corner__box" style="z-index: 1">
+                            <img src="{{ asset('images/landing-page/fitur2.png') }}" alt="gudangin">
+                        </div>
+                        <div class="card position-relative">
+                            <div class="bg__card_corner">
+                                <img src="{{ asset("images/landing-page/fitur_b2.png") }}" alt="gudangin">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="number mr-3">
+                                        02
+                                    </div>
+                                    <div>
+                                        <h5>
+                                            Order Management
+                                        </h5>
+                                        <p class="muted">
+                                            Memudahkanmu untuk memanage pesanan dari berbagai toko dengan berbagai
+                                            e-commerce
+                                        </p>
+                                        <div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
 
-                        <div class="row align-items-center text-center pricing__grey">
-                            <div class="col-3">
-                                <h6 class="text-left">Handling, QC & Packing fee</h6>
-                            </div>
-                            <div class="col-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="col-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="col-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                        </div>
-                        <div class="row align-items-center text-center"
-                            style="padding: 1rem; margin-top: 10px; margin-bottom: 10px">
-                            <div class="col-3">
-                                <h6 class="text-left">Marketplace Integration</h6>
-                            </div>
-                            <div class="col-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="col-3">
-                                <i class="fas fa-check"></i>
-                            </div>
-                            <div class="col-3">
-                                <i class="fas fa-check"></i>
+                                                <p>
+                                                    Semua pesanan akan muncul pada satu dashboard tanpa perlu login ke
+                                                    masing masing toko
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Pesanan akan terkonfirmasi secara otomatis
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Mengetahui update dan detail dari setiap pesanan dalam satu dashboard
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
-                        <div class="row align-items-center text-center pricing__grey">
-                            <div class="col-3">
-                                <h6 class="text-left">Terhubung ke toko hingga</h6>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="fitur__item">
+                        <div class="position-absolute corner__box" style="z-index: 1">
+                            <img src="{{ asset('images/landing-page/fitur3.png') }}" alt="gudangin">
+                        </div>
+                        <div class="card position-relative">
+                            <div class="bg__card_corner">
+                                <img src="{{ asset("images/landing-page/fitur_b3.png") }}" alt="gudangin">
                             </div>
-                            <div class="col-3">
-                                <h6>5 Toko</h6>
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="number mr-3">
+                                        03
+                                    </div>
+                                    <div>
+                                        <h5>
+                                            One Stop Packing Management System
+                                        </h5>
+                                        <p class="muted">
+                                            Pesananmu akan selesai dikemas dalam 5 menit dengan menitipkan barangmu di
+                                            gudangin
+                                        </p>
+                                        <div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Pesanan akan terkonfirmasi selesai dikemas kurang dari 5 menit
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Meningkatkan statistik peringkat toko dengan pemrosesan pesanan yang
+                                                    cepat
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Lacak pesanan pelanggan hanya dalam satu dashboard
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-3">
-                                <h6>10 Toko</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="fitur__item">
+                        <div class="position-absolute corner__box" style="z-index: 1">
+                            <img src="{{ asset('images/landing-page/fitur4.png') }}" alt="gudangin">
+                        </div>
+                        <div class="card position-relative">
+                            <div class="bg__card_corner">
+                                <img src="{{ asset("images/landing-page/fitur_b4.png") }}" alt="gudangin">
                             </div>
-                            <div class="col-3">
-                                <h6>100 Toko</h6>
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="number mr-3">
+                                        04
+                                    </div>
+                                    <div>
+                                        <h5>
+                                            Integrated Chatting
+                                        </h5>
+                                        <p class="muted">
+                                            Menghubungkanmu dengan semua pelanggan dari toko dan e-commerce yang berbeda
+                                            dalam satu dashboard
+                                        </p>
+                                        <div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Semua obrolanmu dengan pelanggan dapat kamu akses di dalam satu
+                                                    dashboard
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Tidak perlu login ke setiap toko untuk membalas chat satu
+                                                    per satu
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Meningkatkan statistik peringkat toko dengan pembalasan chat yang cepat
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div class="fitur__item">
+                        <div class="position-absolute corner__box" style="z-index: 1">
+                            <img src="{{ asset('images/landing-page/fitur5.png') }}" alt="gudangin">
+                        </div>
+                        <div class="card position-relative">
+                            <div class="bg__card_corner">
+                                <img src="{{ asset("images/landing-page/fitur_b5.png") }}" alt="gudangin">
+                            </div>
+                            <div class="card-body">
+                                <div class="d-flex align-items-start">
+                                    <div class="number mr-3">
+                                        05
+                                    </div>
+                                    <div>
+                                        <h5>
+                                            Analytics
+                                        </h5>
+                                        <p class="muted">
+                                            Analisa perkembangan setiap toko dari berbagai e-commerce berbeda dalam satu
+                                            dashboard
+                                        </p>
+                                        <div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Statistik toko, produk, operasional, dan pembeli dapat Anda lihat untuk
+                                                    mengetahui perkembangan toko
+                                                </p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <dot class="mr-2"></dot>
+
+                                                <p>
+                                                    Data yang diperoleh dapat digunakan untuk meningkatkan performa dan
+                                                    kinerja toko
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -132,55 +320,16 @@
         </div>
     </section>
 
-    <section class="pricing__pack">
+    <section class="home__footer fitur" style="margin-top: 3rem">
         <div class="container">
             <div class="inner__container">
-                <h2>Packaging Cost per order</h2>
-
-                <table class="table">
-                    <tbody>
-                        <tr class="text-center" style="font-size: 11px">
-                            <td class="text-left"></td>
-                            <td>Max. 17 x 9 x 6 cm</td>
-                            <td>Max. 20,8 x 13,8 x 12,3 cm</td>
-                            <td>Max. 30 x 25 x 20 cm</td>
-                            <td>Max. 45 x 35 x 30 cm</td>
-                            <td>Max. 50 x 50 x 50 cm</td>
-                        </tr>
-                        <tr class="text-center" style="background: #F7761E; color:#fff;font-family: gilroy-bold;">
-                            <td class="text-left">PACKAGING TYPE</td>
-                            <td>Super Kecil</td>
-                            <td>Kecil</td>
-                            <td>Sedang</td>
-                            <td>Besar</td>
-                            <td>Extra Besar</td>
-                        </tr>
-                        <tr class="text-center pricing__big">
-                            <td class="text-left">Bubble Wrap</td>
-                            <td>Rp1.300</td>
-                            <td>Rp1.500</td>
-                            <td>Rp2.000</td>
-                            <td>Rp3.000</td>
-                            <td>-</td>
-                        </tr>
-                        <tr class="text-center pricing__big">
-                            <td class="text-left">Karton</td>
-                            <td>Rp3.000</td>
-                            <td>Rp3.500</td>
-                            <td>Rp7.000</td>
-                            <td>Rp13.000</td>
-                            <td>-</td>
-                        </tr>
-                        <tr class="text-center pricing__big">
-                            <td class="text-left">Kayu</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>Rp260.000</td>
-                            <td>Rp512.000</td>
-                            <td>Rp774.000</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="card">
+                    <div class="card-body">
+                        <p>Kamu stay at home kembangin bisnisnya</p>
+                        <h2>Biar Kami yang <span>kelola dan kembangkan</span> usaha online Anda!</h2>
+                        <button class="btn">Coba Gratis <i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
             </div>
         </div>
     </section>

@@ -17,3 +17,4 @@ use App\Http\Controllers\PageController;
 Route::get('/', [PageController::class, 'homePage'])->name('homePage');
 Route::get('/harga', [PageController::class, 'pricingPage'])->name('pricingPage');
 Route::get('/faq', [PageController::class, 'faqPage'])->name('faqPage');
+Route::get('/fitur', [PageController::class, 'fiturPage'])->name('fiturPage');

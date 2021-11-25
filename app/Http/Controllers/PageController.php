@@ -18,4 +18,8 @@ class PageController extends Controller
     {
         return view('pages.faq');
     }
+    public function fiturPage()
+    {
+        return view('pages.fitur');
+    }
 }
