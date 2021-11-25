@@ -1,0 +1,129 @@
+/*
+ * jquery.tocify.css 1.9.0
+ * Author: @gregfranko
+ */
+
+/* The Table of Contents container element */
+.tocify {
+    max-height: 90%;
+    overflow: auto;
+    width: 15%;
+}
+
+/* The Table of Contents is composed of multiple nested unordered lists.  These styles remove the default styling of an unordered list because it is ugly. */
+.tocify ul,
+.tocify li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    line-height: 30px;
+    display: unset;
+    width: 100%;
+}
+
+/* Top level header elements */
+.tocify-header {
+    text-indent: 10px;
+}
+
+/* Top level subheader elements.  These are the first nested items underneath a header element. */
+.tocify-subheader {
+    text-indent: 20px;
+    display: none;
+}
+
+/* Makes the font smaller for all subheader elements. */
+.tocify-subheader li {
+    font-size: 12px;
+}
+
+/* Further indents second level subheader elements. */
+.tocify-subheader .tocify-subheader {
+    text-indent: 30px;
+}
+
+/* Further indents third level subheader elements. You can continue this pattern if you have more nested elements. */
+.tocify-subheader .tocify-subheader .tocify-subheader {
+    text-indent: 40px;
+}
+
+/* Twitter Bootstrap Override Style */
+.nav-list > li > a,
+.nav-list .nav-header {
+    margin: 0px;
+}
+
+/* Twitter Bootstrap Override Style */
+.tocify-header.nav-list > li > a {
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.tocify-subheader.nav-list > li > a {
+    padding-left: 10px;
+}
+
+.nav-list > li > a {
+    padding: 5px;
+    line-height: 150%;
+    text-indent: 0;
+}
+
+.nav-list > .active > a,
+.nav-list > .active > a:hover {
+    color: unset;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: unset;
+    border-left: 4px solid #e36d1c;
+    border-radius: 4px;
+    text-align: 10px;
+}
+
+.border-side-primary {
+    width: 5px;
+    height: 30px;
+    border-radius: 4px;
+    background-color: #e36d1c;
+    margin-right: 20px;
+}
+
+.pad__left {
+    padding-left: 25px;
+}
+
+.numb__item {
+    display: flex;
+    flex: 0 0 30px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding-top: 2px;
+    border-radius: 15px;
+    background: #e36d1c;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    font-weight: 600;
+    color: #ffffff;
+    margin-right: 1rem;
+}
+
+.attention__box {
+    background: rgba(237, 58, 105, 0.17);
+}
+
+@media (max-width: 767px) {
+    #toc {
+        position: relative;
+        width: 100%;
+        margin: 0px 0px 20px 0px;
+    }
+}
+
+@media (max-width: 450px) {
+    .pad__left {
+        padding-left: unset;
+    }
+}

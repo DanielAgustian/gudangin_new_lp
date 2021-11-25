@@ -14,4 +14,8 @@ class PageController extends Controller
     {
         return view('pages.pricing');
     }
+    public function faqPage()
+    {
+        return view('pages.faq');
+    }
 }

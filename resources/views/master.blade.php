@@ -30,6 +30,7 @@
 
     <!-- Theme Styles -->
     <link href="{{ asset('/css/custom.css') }}" rel="stylesheet" type="text/css">
+    @yield('cssinline')
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-212565341-1"></script>

@@ -1,0 +1,65 @@
+.pricing__hero.faq p {
+    font-family: gilroy-medium;
+    font-size: 18px;
+    line-height: 21px;
+    color: rgba(255, 255, 255, 0.7);
+    margin: 15px auto;
+    width: 100%;
+}
+
+.pricing__hero.faq {
+    padding-bottom: 200px;
+}
+
+.faq .btn__white {
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 16px 20px;
+
+    font-family: Gilroy-SemiBold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #e36d1c;
+    text-decoration: none;
+}
+
+#faq {
+    padding: 50px 15px 100px;
+}
+
+#faq h3 {
+    font-size: 22px;
+}
+
+#faq p {
+    opacity: 1;
+    line-height: 150%;
+    font-size: 14px;
+}
+
+#faq .card.transparent {
+    background: transparent;
+    border: none;
+}
+
+#faq .card h6 {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: -1px;
+    color: #000000;
+}
+
+#faq .primary {
+    color: #e38b30;
+}
+
+#faq .box {
+    background: rgba(227, 139, 48, 0.3);
+    width: 100%;
+    padding: 15px;
+}
