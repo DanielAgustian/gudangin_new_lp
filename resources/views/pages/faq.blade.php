@@ -750,10 +750,6 @@
                     $("#toc").css("top", "0")
                 }
             });
-        } else {
-            $("#toc").removeClass("position-fixed")
-            $("#toc").removeClass("position-absolute")
-            $("#toc").addClass("position-relative")
-        }
+img__layanan60%
     </script>
 @endsection

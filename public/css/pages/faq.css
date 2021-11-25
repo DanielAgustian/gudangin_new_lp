@@ -101,7 +101,7 @@
     .inside__box .text-center {
         margin: 3rem 8rem;
     }
-    #faq .after__box {
+    #faq .w {
         margin-top: 20rem;
     }
 }
@@ -127,8 +127,8 @@
         font-size: 12px !important;
     }
     .inside__box .big {
-        font-size: 18px!important;
-        line-height: 1!important;
+        font-size: 18px !important;
+        line-height: 1 !important;
         padding-top: 1px;
         padding-bottom: 15px;
         margin-bottom: 0 !important;

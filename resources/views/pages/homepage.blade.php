@@ -363,7 +363,8 @@
                     <div class="card-body">
                         <p>Kamu stay at home kembangin bisnisnya</p>
                         <h2>Biar Kami yang <span>kelola dan kembangkan</span> usaha online Anda!</h2>
-                        <button class="btn">Coba Gratis <i class="fas fa-chevron-right"></i></button>
+                        <button data-toggle="modal" data-target="#exampleModal" class="btn">Coba Gratis <i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
