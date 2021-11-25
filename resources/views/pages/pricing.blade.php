@@ -45,10 +45,18 @@
                     <div class="card-body">
 
                         <div class="row align-items-center text-center pricing__amount">
-                            <div class="col-3">
-
+                            <div class="col-md-3 col-12 box_time">
+                                <div class="time">
+                                    1 Month
+                                </div>
+                                <div class="time">
+                                    6 Month
+                                </div>
+                                <div class="time">
+                                    1 Year
+                                </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-12">
                                 <h5>Starter</h5>
                                 <h3>Rp 239,200</h3>
                                 <span>Biaya bulanan</span>
@@ -58,7 +66,7 @@
                                     <span>atau <a href="#" style="color: #000000;">Beli Sekarang</a></span>
                                 </div>
                             </div>
-                            <div class="col-3 bestt">
+                            <div class="col-md-3 col-12 bestt">
                                 <div class="best_label">Best Value</div>
                                 <h5 style="color:#ffffff">Premium</h5>
                                 <h3 style="color:#ffffff">Rp 559,200</h3>
@@ -71,7 +79,7 @@
                                             Sekarang</a></span>
                                 </div>
                             </div>
-                            <div class="col-3">
+                            <div class="col-md-3 col-12">
                                 <h5 style="color: #BF9000;">Business</h5>
                                 <h3>Rp 1,119,200</h3>
                                 <span>Biaya bulanan</span>
@@ -80,6 +88,21 @@
                                     <br>
                                     <span>atau <a href="#" style="color: #BF9000;">Beli Sekarang</a></span>
                                 </div>
+                            </div>
+                        </div>
+
+                        <div class="row align-items-center text-center d-sm-none mb-4">
+                            <div class="col-3">
+
+                            </div>
+                            <div class="col-3">
+                                <h6>Starter</h6>
+                            </div>
+                            <div class="col-3">
+                                <h6>Best Value</h6>
+                            </div>
+                            <div class="col-3">
+                                <h6>Business</h6>
                             </div>
                         </div>
 
@@ -137,50 +160,52 @@
             <div class="inner__container">
                 <h2>Packaging Cost per order</h2>
 
-                <table class="table">
-                    <tbody>
-                        <tr class="text-center" style="font-size: 11px">
-                            <td class="text-left"></td>
-                            <td>Max. 17 x 9 x 6 cm</td>
-                            <td>Max. 20,8 x 13,8 x 12,3 cm</td>
-                            <td>Max. 30 x 25 x 20 cm</td>
-                            <td>Max. 45 x 35 x 30 cm</td>
-                            <td>Max. 50 x 50 x 50 cm</td>
-                        </tr>
-                        <tr class="text-center" style="background: #F7761E; color:#fff;font-family: gilroy-bold;">
-                            <td class="text-left">PACKAGING TYPE</td>
-                            <td>Super Kecil</td>
-                            <td>Kecil</td>
-                            <td>Sedang</td>
-                            <td>Besar</td>
-                            <td>Extra Besar</td>
-                        </tr>
-                        <tr class="text-center pricing__big">
-                            <td class="text-left">Bubble Wrap</td>
-                            <td>Rp1.300</td>
-                            <td>Rp1.500</td>
-                            <td>Rp2.000</td>
-                            <td>Rp3.000</td>
-                            <td>-</td>
-                        </tr>
-                        <tr class="text-center pricing__big">
-                            <td class="text-left">Karton</td>
-                            <td>Rp3.000</td>
-                            <td>Rp3.500</td>
-                            <td>Rp7.000</td>
-                            <td>Rp13.000</td>
-                            <td>-</td>
-                        </tr>
-                        <tr class="text-center pricing__big">
-                            <td class="text-left">Kayu</td>
-                            <td>-</td>
-                            <td>-</td>
-                            <td>Rp260.000</td>
-                            <td>Rp512.000</td>
-                            <td>Rp774.000</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="table-responsive">
+                    <table class="table">
+                        <tbody>
+                            <tr class="text-center" style="font-size: 11px">
+                                <td class="text-left"></td>
+                                <td>Max. 17 x 9 x 6 cm</td>
+                                <td>Max. 20,8 x 13,8 x 12,3 cm</td>
+                                <td>Max. 30 x 25 x 20 cm</td>
+                                <td>Max. 45 x 35 x 30 cm</td>
+                                <td>Max. 50 x 50 x 50 cm</td>
+                            </tr>
+                            <tr class="text-center" style="background: #F7761E; color:#fff;font-family: gilroy-bold;">
+                                <td class="text-left">PACKAGING TYPE</td>
+                                <td>Super Kecil</td>
+                                <td>Kecil</td>
+                                <td>Sedang</td>
+                                <td>Besar</td>
+                                <td>Extra Besar</td>
+                            </tr>
+                            <tr class="text-center pricing__big">
+                                <td class="text-left">Bubble Wrap</td>
+                                <td>Rp1.300</td>
+                                <td>Rp1.500</td>
+                                <td>Rp2.000</td>
+                                <td>Rp3.000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center pricing__big">
+                                <td class="text-left">Karton</td>
+                                <td>Rp3.000</td>
+                                <td>Rp3.500</td>
+                                <td>Rp7.000</td>
+                                <td>Rp13.000</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="text-center pricing__big">
+                                <td class="text-left">Kayu</td>
+                                <td>-</td>
+                                <td>-</td>
+                                <td>Rp260.000</td>
+                                <td>Rp512.000</td>
+                                <td>Rp774.000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </section>
