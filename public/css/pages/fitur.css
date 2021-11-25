@@ -7,20 +7,20 @@
 }
 
 .fitur__hero h2 {
-    font-family: gilroy-bold;
+    /* font-family: gilroy-bold; */
     font-size: 48px;
     line-height: 64px;
     color: #ffffff;
 }
 .fitur__hero h6 {
-    font-family: gilroy-medium;
+    /* font-family: gilroy-medium; */
     font-size: 22px;
     line-height: 26px;
     color: rgba(255, 255, 255, 0.7);
 }
 
 .fitur__desc h2 {
-    font-family: gilroy-bold;
+    /* font-family: gilroy-bold; */
     font-size: 48px;
     line-height: 64px;
     text-align: center;
@@ -28,7 +28,7 @@
 }
 
 .fitur__desc p {
-    font-family: gilroy-medium;
+    /* font-family: gilroy-medium; */
     font-size: 16px;
     line-height: 150%;
     text-align: center;
@@ -69,7 +69,7 @@
 }
 
 .fitur__item .card-body .fitem_num {
-    font-family: gilroy-bold;
+    /* font-family: gilroy-bold; */
     font-size: 60px;
     line-height: 64px;
     color: rgba(227, 139, 48, 0.5);
@@ -78,13 +78,13 @@
 }
 
 .fitur__item .card h5 {
-    font-family: gilroy-bold;
+    /* font-family: gilroy-bold; */
     font-size: 26px;
     line-height: 30px;
     color: #e38b30;
 }
 .fitur__item .card h6 {
-    font-family: gilroy-medium;
+    /* font-family: gilroy-medium; */
     font-size: 16px;
     line-height: 150%;
     color: rgba(227, 139, 48, 0.6);
@@ -100,17 +100,30 @@
     color: #e38b30;
 }
 
-#pinContainer {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    /* -webkit-perspective: 1000;
-    perspective: 1000; */
-    padding-left: 100px;
-    border: 1px solid black;
+.fitur__item {
+    overscroll-behavior: none;
+    border: 1px solid green;
 }
 
-#slideContainer {
+#pinContainer {
+    margin-top: -200px;
+    padding-top: 300px;
+    padding-left: 200px;
+    overscroll-behavior: none;
+    width: 200%;
+    /* height: 100%; */
+    display: flex;
+    flex-wrap: nowrap;
+    border: 1px solid red;
+    /* overflow-y: hidden !important; */
+}
+
+.fitur__item .panel {
+    width: 50%;
+    margin-right: 25px;
+}
+
+/* #slideContainer {
     width: 200%;
     height: 100%;
     border: 1px solid yellow;
@@ -119,11 +132,10 @@
 
     display: flex;
     align-items: center;
-}
+} */
 
-.panel {
-    /* float: left; */
+/* .panel {
     width: 40%;
     height: 100%;
     margin-right: 25px;
-}
+} */

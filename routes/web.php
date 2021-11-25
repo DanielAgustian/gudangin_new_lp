@@ -14,7 +14,8 @@ use App\Http\Controllers\PageController;
 |
 */
 
-// Route::get('/', [PageController::class, 'homePage'])->name('homePage');
-Route::get('/', [PageController::class, 'comingSoon'])->name('comingSoon');
+Route::get('/', [PageController::class, 'homePage'])->name('homePage');
+// Route::get('/', [PageController::class, 'comingSoon'])->name('comingSoon');
 Route::get('/harga', [PageController::class, 'pricingPage'])->name('pricingPage');
 Route::get('/fitur', [PageController::class, 'fiturPage'])->name('fiturPage');
+Route::get('/petunjuk', [PageController::class, 'guidePage'])->name('guidePage');
