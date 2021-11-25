@@ -58,7 +58,7 @@
                         </div>
                         <div class="card position-relative">
                             <div class="bg__card_corner">
-                                <img src="{{ asset("images/landing-page/fitur_b1.png") }}" alt="gudangin">
+                                <img src="{{ asset('images/landing-page/fitur_b1.png') }}" alt="gudangin">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-start">
@@ -120,7 +120,7 @@
                         </div>
                         <div class="card position-relative">
                             <div class="bg__card_corner">
-                                <img src="{{ asset("images/landing-page/fitur_b2.png") }}" alt="gudangin">
+                                <img src="{{ asset('images/landing-page/fitur_b2.png') }}" alt="gudangin">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-start">
@@ -172,7 +172,7 @@
                         </div>
                         <div class="card position-relative">
                             <div class="bg__card_corner">
-                                <img src="{{ asset("images/landing-page/fitur_b3.png") }}" alt="gudangin">
+                                <img src="{{ asset('images/landing-page/fitur_b3.png') }}" alt="gudangin">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-start">
@@ -224,7 +224,7 @@
                         </div>
                         <div class="card position-relative">
                             <div class="bg__card_corner">
-                                <img src="{{ asset("images/landing-page/fitur_b4.png") }}" alt="gudangin">
+                                <img src="{{ asset('images/landing-page/fitur_b4.png') }}" alt="gudangin">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-start">
@@ -277,7 +277,7 @@
                         </div>
                         <div class="card position-relative">
                             <div class="bg__card_corner">
-                                <img src="{{ asset("images/landing-page/fitur_b5.png") }}" alt="gudangin">
+                                <img src="{{ asset('images/landing-page/fitur_b5.png') }}" alt="gudangin">
                             </div>
                             <div class="card-body">
                                 <div class="d-flex align-items-start">

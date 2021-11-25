@@ -22,4 +22,13 @@ class PageController extends Controller
     {
         return view('pages.fitur');
     }
+    public function comingSoon()
+    {
+        return view('coming-soon');
+    }
+
+    public function guidePage()
+    {
+        return view('pages.petunjuk');
+    }
 }

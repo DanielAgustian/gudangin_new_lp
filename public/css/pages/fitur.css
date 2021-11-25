@@ -113,6 +113,14 @@
     color: white;
 }
 
+.home__footer.fitur{
+    background-color: unset;
+}
+
+#exampleModal img.mt-4{
+    width: 70px;
+}
+
 @media (max-width: 450px) {
     .fitur__item dot {
         width: 12px;
@@ -143,15 +151,15 @@
         top: -2.5rem;
     }
 
-    .fitur__item .corner__box img{
+    .fitur__item .corner__box img {
         width: 80%;
     }
 
-    .fitur .fitur__item .card{
+    .fitur .fitur__item .card {
         padding-top: 3rem;
     }
 
-    #problem_group .col-12{
+    #problem_group .col-12 {
         margin-top: 4rem;
     }
 }
