@@ -26,6 +26,21 @@
     text-decoration: none;
 }
 
+#faq .btn__primary {
+    background: #e36d1c;
+    border-radius: 8px;
+    padding: 16px 20px;
+
+    font-family: Gilroy-SemiBold;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #ffffff;
+    text-decoration: none;
+}
+
 #faq {
     padding: 50px 15px 100px;
 }
@@ -62,4 +77,67 @@
     background: rgba(227, 139, 48, 0.3);
     width: 100%;
     padding: 15px;
+}
+
+#faq .after__box {
+    margin-top: 30rem;
+}
+
+.inside__box .big {
+    font-size: 2rem !important;
+    line-height: 1;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.inside__box .text-center {
+    margin: 4rem 8rem;
+}
+
+@media (max-width: 1024px) {
+    .inside__box .big {
+        font-size: 1.5rem !important;
+    }
+    .inside__box .text-center {
+        margin: 3rem 8rem;
+    }
+    #faq .after__box {
+        margin-top: 20rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .inside__box .text-center {
+        margin: 2rem 8rem;
+    }
+    .inside__box .big,
+    #faq h2 {
+        font-size: 1.5rem !important;
+    }
+    #faq h3 {
+        font-size: 1.2rem !important;
+    }
+}
+
+@media (max-width: 450px) {
+    #faq .after__box {
+        margin-top: 12rem;
+    }
+    .inside__box .small {
+        font-size: 12px !important;
+    }
+    .inside__box .big {
+        font-size: 18px!important;
+        line-height: 1!important;
+        padding-top: 1px;
+        padding-bottom: 15px;
+        margin-bottom: 0 !important;
+    }
+    .inside__box .text-center {
+        margin: 1.5rem 3rem;
+    }
+    #faq .btn__primary {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
 }

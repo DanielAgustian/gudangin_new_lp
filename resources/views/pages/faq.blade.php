@@ -55,7 +55,7 @@
             </div>
             <div class="span9">
                 <h2>Pendahuluan</h2>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Selamat Datang di Gudangin</h3>
                 </div>
@@ -225,7 +225,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Fungsi GUDANGIN</h3>
                 </div>
@@ -243,11 +243,11 @@
                         </p>
                     </div>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Layanan GUDANGIN</h3>
                 </div>
-                <div class="pad__left">
+                <div class="pad__left position-relative">
                     <div class="row">
                         <div class="col-md-4 col-12">
                             <div class="card transparent">
@@ -287,10 +287,27 @@
                             </div>
                         </div>
                     </div>
+                    <img class="position-absolute" src="{{ asset('images/landing-page/boxxx.png') }}" alt="gudangin">
+                    <div class="position-absolute inside__box">
+                        <div class="text-center">
+                            <p class="small mb-1">Kamu stay at home kembangin bisnisnya</p>
+                            <p class="big">
+                                <b>
+                                    Biar Kami yang <span class="primary">kelola dan kembangkan</span> usaha online
+                                    Anda!
+                                </b>
+                            </p>
+                            <div>
+                                <a href="#" class="btn__primary">
+                                    COBA GRATIS <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
-                <h2>Menghubungkan Toko ecommerce ke GUDANGIN</h2>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <h2 class="after__box">Menghubungkan Toko ecommerce ke GUDANGIN</h2>
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Tokopedia</h3>
                 </div>
@@ -330,7 +347,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Shopee</h3>
                 </div>
@@ -369,7 +386,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Blibli</h3>
                 </div>
@@ -439,7 +456,7 @@
                 </div>
 
                 <h2 style="margin-top: 2rem">Perbaharui Produk</h2>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Cara Perbaharui Produk</h3>
                 </div>
@@ -506,7 +523,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Tujuan</h3>
                 </div>
@@ -518,7 +535,7 @@
                 </div>
 
                 <h2 style="margin-top: 2rem">Agregasi Stok</h2>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Tujuan Agregasi Stok</h3>
                 </div>
@@ -532,7 +549,7 @@
                         toko yang memiliki produk serupa tersebut.
                     </p>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Cara Kerja</h3>
                 </div>
@@ -551,7 +568,7 @@
                 </div>
 
                 <h2 style="margin-top: 2rem">One Stop Packing Management System</h2>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Peralatan GUDANGIN</h3>
                 </div>
@@ -642,7 +659,7 @@
 
                     </p>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Lihat dan Pantau Pesanan</h3>
                 </div>
@@ -666,7 +683,7 @@
                         tersedia di Blibli.
                     </p>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Tokopedia</h3>
                 </div>
@@ -676,7 +693,7 @@
                         Auto Connect
                     </p>
                 </div>
-                <div class="mt-3 mb-3 d-flex align-items-center">
+                <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Shopee</h3>
                 </div>
