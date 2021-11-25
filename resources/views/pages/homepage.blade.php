@@ -379,10 +379,41 @@
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h1>asdasdd</h1>
-                    <h1>asdasdd</h1>
-                    <h1>asdasdd</h1>
-                    <h1>asdasdd</h1>
+
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <div>
+                                <img src="{{ asset('images/landing-page/home_fitur1.png') }}" alt="gudangin">
+                            </div>
+                            <div>
+                                <homebox>
+                                    <p>
+                                        Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem
+                                    </p>
+                                </homebox>
+                                <homebox>
+                                    <p>
+                                        Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem
+                                    </p>
+                                </homebox>
+                                <homebox>
+                                    <p>
+                                        Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem
+                                    </p>
+                                </homebox>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="{{ asset('images/landing-page/home_fitur2.png') }}" alt="gudangin">
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <img src="{{ asset('images/landing-page/home_fitur3.png') }}" alt="gudangin">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -396,6 +427,7 @@
 
     <script>
         AOS.init();
+        $('#exampleModal').modal('show')
     </script>
     <script>
         $("#problem_group").grouploop({
