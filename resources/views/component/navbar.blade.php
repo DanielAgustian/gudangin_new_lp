@@ -10,15 +10,17 @@
                 <div class="landing_nav_menu">
                     <ul>
                         <li>
-                            <a href="#" class="">Kenapa Gudangin? <i class="fas fa-chevron-down"></i></a>
+                            <a href="{{ route('fiturPage') }}" class="">Kenapa Gudangin? <i
+                                    class="fas fa-chevron-down"></i></a>
                         </li>
                         <li>
-                            <a href="#" class="">Solusi <i class="fas fa-chevron-down"></i></a>
+                            <a href="{{ route('faqPage') }}" class="">Solusi <i
+                                    class="fas fa-chevron-down"></i></a>
                         </li>
-                        <li>
+                        {{-- <li>
                             <a href="{{ route('pricingPage') }}"
                                 class="{{ set_active_sidebar('pricingPage') }}">Harga</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
