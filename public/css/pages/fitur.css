@@ -37,7 +37,7 @@
 }
 
 .fitur__item .number {
-    font-family: Gilroy-Bold;
+    /* font-family: Gilroy-Bold; */
     font-size: 60px;
     line-height: 64px;
     /* or 107% */
@@ -48,7 +48,7 @@
 }
 
 .fitur__item h5 {
-    font-family: Gilroy-Bold;
+    /* font-family: Gilroy-Bold; */
     font-size: 26px;
     line-height: 30px;
     font-feature-settings: "pnum" on, "lnum" on;
@@ -97,27 +97,27 @@
     border-top-right-radius: 12px;
 }
 
-.fitur__item:hover dot {
+.swiper-slide-active .fitur__item dot {
     background-color: white;
 }
 
-.fitur__item:hover p {
+.swiper-slide-active .fitur__item p {
     color: white;
 }
 
-.fitur__item:hover .card {
+.swiper-slide-active .fitur__item .card {
     background-color: #e36d1d;
 }
 
-.fitur__item:hover h5 {
+.swiper-slide-active .fitur__item h5 {
     color: white;
 }
 
-.home__footer.fitur{
+.home__footer.fitur {
     background-color: unset;
 }
 
-#exampleModal img.mt-4{
+#exampleModal img.mt-4 {
     width: 70px;
 }
 
@@ -134,7 +134,7 @@
     }
 
     .fitur__item h5 {
-        font-family: Gilroy-Bold;
+        /* font-family: Gilroy-Bold; */
         font-size: 20px;
         line-height: 24px;
     }

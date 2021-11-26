@@ -13,13 +13,7 @@
 
             <p style="color: white">
                 Beberapa hal ini yang harus kamu pahami sebelum menggunakan gudangin
-            </p>
-
-            <div class="mt-3">
-                <a href="" class="btn__white">
-                    DOWNLOAD EBOOK <i class="fas fa-chevron-right"></i>
-                </a>
-            </div>
+            </p> 
         </div>
         <div class="custom-shape-divider-bottom-1636602785">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -750,6 +744,10 @@
                     $("#toc").css("top", "0")
                 }
             });
-img__layanan60%
+        } else {
+            $("#toc").addClass("position-relative")
+            $("#toc").removeClass("position-fixed")
+            $("#toc").removeClass("position-absolute")
+        }
     </script>
 @endsection

@@ -458,7 +458,7 @@
 
     <script>
         AOS.init();
-        $('#exampleModal').modal('show')
+        // $('#exampleModal').modal('show')
     </script>
     <script>
         $("#problem_group").grouploop({

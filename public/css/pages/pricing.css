@@ -81,14 +81,14 @@
     padding: 2px 25px;
 }
 
-.pricing__card .pricing__amount .bestt {
+.bestt {
     background: #f7761e;
     border-radius: 20px;
     padding-top: 2rem;
     padding-bottom: 2rem;
     margin-top: -50px;
 }
-.pricing__card .pricing__amount .bestt .best_label {
+.bestt .best_label {
     background: #fdc27b;
     /* font-family: gilroy-bold; */
     font-size: 18px;
@@ -166,6 +166,34 @@
 .pricing__amount .time:hover {
     background: #f7761e;
     color: #ffffff;
+}
+
+.btn_swiper_primary {
+    background: #fdc27b;
+    border-radius: 5px;
+    /* font-family: Poppins; */
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    /* identical to box height */
+
+    color: #f7761e;
+}
+
+.swiper-slide > div{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.swiper-slide > div:not(.bestt) {
+    background: #fff9f4;
+    box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+}
+
+.swiper-slide > .bestt {
+    margin-top: 0;
 }
 
 @media (max-width: 450px) {

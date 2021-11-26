@@ -1,5 +1,9 @@
 @extends('master')
 
+@section('cssinline')
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+@endsection
+
 @section('content')
     <section class="pricing__hero">
         <div class="container">
@@ -41,9 +45,95 @@
     <section class="pricing__card">
         <div class="container">
             <div class="inner__container">
-                <div class="card">
-                    <div class="card-body">
+                <div class="d-sm-none d-block">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="text-center">
+                                            <span class="text-center">Starter</span>
+                                            <h3 class="text-center">Rp 239,200</h3>
+                                            <p class="text-center">Biaya bulanan</p>
 
+                                            <ul class="text-left" style="margin-top: 2rem">
+                                                <li>Handling, QC & packing fee</li>
+                                                <li>Marketplace integration</li>
+                                                <li>Terhubung ke toko hingga 5 Toko</li>
+                                            </ul>
+
+                                            <div style="margin-top: 25px">
+                                                <button class="btn btn_swiper_primary">Coba Sekarang</button>
+                                                <br>
+                                                <span style="font-size: 12px;">atau <a href="#"
+                                                        style="color: inherit;text-decoration: underline">Beli
+                                                        Sekarang</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="bestt">
+                                    <div class="d-flex justify-content-center">
+                                        <div class="text-center">
+                                            <div class="best_label">Best Value</div>
+                                            <h5 style="color:#ffffff">Premium</h5>
+                                            <h3 style="color:#ffffff">Rp 559,200</h3>
+                                            <span style="color:#ffffff">Biaya bulanan</span>
+
+                                            <ul class="text-left" style="margin-top: 2rem">
+                                                <li>Handling, QC & packing fee</li>
+                                                <li>Marketplace integration</li>
+                                                <li>Terhubung ke toko hingga 5 Toko</li>
+                                            </ul>
+
+                                            <div style="margin-top: 25px">
+                                                <button
+                                                    style="padding: 8px; border-radius: 5px;border: 1px solid #fff; background:#f7761e; color: #fff;font-size: 12px;">Coba
+                                                    Sekarang</button>
+                                                <br>
+                                                <span style="font-size: 12px;color:#ffffff">atau <a href="#"
+                                                        style="color:#ffffff">Beli
+                                                        Sekarang</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="d-flex justify-content-center">
+                                        <div class="text-center">
+                                            <h5 style="color: #BF9000;">Business</h5>
+                                            <h3>Rp 1,119,200</h3>
+                                            <span>Biaya bulanan</span>
+
+                                            <ul class="text-left" style="margin-top: 2rem">
+                                                <li>Handling, QC & packing fee</li>
+                                                <li>Marketplace integration</li>
+                                                <li>Terhubung ke toko hingga 5 Toko</li>
+                                            </ul>
+
+                                            <div style="margin-top: 25px">
+                                                <button
+                                                    style="padding: 8px;font-size: 12px;border-radius: 5px;background: #BF9000; border: transparent">Coba
+                                                    Sekarang</button>
+                                                <br>
+                                                <span style="font-size: 12px;">atau <a href="#" style="color: #BF9000;">Beli
+                                                        Sekarang</a></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
+                <div class="card d-sm-block d-none">
+                    <div class="card-body">
                         <div class="row align-items-center text-center pricing__amount">
                             <div class="col-md-3 col-12 box_time">
                                 <div class="time">
@@ -212,5 +302,35 @@
 @endsection
 
 @section('pageJS')
-
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            centeredSlides: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                1440: {
+                    slidesPerView: 3,
+                },
+                768: {
+                    slidesPerView: 1.5,
+                },
+                425: {
+                    slidesPerView: 1.25,
+                },
+                375: {
+                    slidesPerView: 1.25,
+                },
+                320: {
+                    slidesPerView: 1,
+                },
+                // when window width is <= 768px 
+            }
+        });
+    </script>
 @endsection
