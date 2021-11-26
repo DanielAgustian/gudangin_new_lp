@@ -13,7 +13,7 @@
 
             <p style="color: white">
                 Beberapa hal ini yang harus kamu pahami sebelum menggunakan gudangin
-            </p> 
+            </p>
         </div>
         <div class="custom-shape-divider-bottom-1636602785">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -281,26 +281,9 @@
                             </div>
                         </div>
                     </div>
-                    <img class="position-absolute" src="{{ asset('images/landing-page/boxxx.png') }}" alt="gudangin">
-                    <div class="position-absolute inside__box">
-                        <div class="text-center">
-                            <p class="small mb-1">Kamu stay at home kembangin bisnisnya</p>
-                            <p class="big">
-                                <b>
-                                    Biar Kami yang <span class="primary">kelola dan kembangkan</span> usaha online
-                                    Anda!
-                                </b>
-                            </p>
-                            <div>
-                                <a href="#" class="btn__primary">
-                                    COBA GRATIS <i class="fas fa-chevron-right"></i>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
-                <h2 class="after__box">Menghubungkan Toko ecommerce ke GUDANGIN</h2>
+                <h2>Menghubungkan Toko ecommerce ke GUDANGIN</h2>
                 <div class="my-4 d-flex align-items-center">
                     <div class="border-side-primary"></div>
                     <h3 class="mb-0">Tokopedia</h3>
@@ -709,6 +692,26 @@
                             </p>
                         </li>
                     </ul>
+                </div>
+
+                <div class="pad__left position-relative" style="margin-top: 2rem">
+                    <img class="position-absolute" src="{{ asset('images/landing-page/boxxx.png') }}" alt="gudangin">
+                    <div class="position-absolute inside__box">
+                        <div class="text-center">
+                            <p class="small mb-1">Kamu stay at home kembangin bisnisnya</p>
+                            <p class="big">
+                                <b>
+                                    Biar Kami yang <span class="primary">kelola dan kembangkan</span> usaha online
+                                    Anda!
+                                </b>
+                            </p>
+                            <div>
+                                <a href="#" class="btn__primary">
+                                    COBA GRATIS <i class="fas fa-chevron-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
