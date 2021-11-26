@@ -2,6 +2,23 @@
 
 @section('cssinline')
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <style>
+        .swiper-slide>div {
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .swiper-slide>div:not(.bestt) {
+            background: #fff9f4;
+            box-shadow: inset 0px 0px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 20px;
+        }
+
+        .swiper-slide>.bestt {
+            margin-top: 0;
+        }
+
+    </style>
 @endsection
 
 @section('content')

@@ -4,9 +4,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
     <style>
         .mySwiper {
-            padding: 5rem 0 1rem 0 !important;
+            padding: 5rem 0 3rem 0 !important;
         }
-
+        .swiper-slide{
+            height: unset;
+        }
     </style>
 @endsection
 
@@ -355,7 +357,7 @@
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 3,
+            slidesPerView: 3.5,
             spaceBetween: 30,
             centeredSlides: true,
             loop: true,

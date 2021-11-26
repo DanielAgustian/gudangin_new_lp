@@ -735,7 +735,6 @@
             $(window).scroll(function(event) {
 
                 var scroll = $(window).scrollTop();
-                console.log(scroll)
                 // Do something
                 if (scroll > 470) {
                     $("#toc").addClass("position-fixed")

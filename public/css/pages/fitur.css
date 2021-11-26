@@ -58,7 +58,7 @@
 }
 
 .fitur__item p.muted {
-    font-family: Gilroy-Medium;
+    /* font-family: Gilroy-Medium; */
     font-size: 16px;
     line-height: 150%;
     /* or 24px */
@@ -107,6 +107,7 @@
 
 .swiper-slide-active .fitur__item .card {
     background-color: #e36d1d;
+    overflow: hidden;
 }
 
 .swiper-slide-active .fitur__item h5 {
