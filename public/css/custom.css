@@ -2,3 +2,15 @@
 @import "./pages/navbar.css";
 @import "./pages/homepage.css";
 @import "./pages/pricing.css";
+@import "./pages/faq.css";
+@import "./pages/fitur.css";
+@import "./pages/coming-soon.css";
+@import "./pages/guide.css";
+
+.swiper-pagination-bullet-active {
+    background-color: #e36d1c !important;
+}
+
+.swiper {
+    padding-bottom: 2rem!important;
+}

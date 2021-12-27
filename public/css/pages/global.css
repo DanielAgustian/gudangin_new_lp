@@ -1,4 +1,7 @@
-@font-face {
+/* @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+/* @font-face {
     font-family: gilroy;
     src: url(../../fonts/Gilroy-Regular.ttf);
 }
@@ -16,12 +19,16 @@
 @font-face {
     font-family: gilroy-medium;
     src: url(../../fonts/Gilroy-Medium.ttf);
-}
+} */
 
 body {
-    font-family: gilroy, serif;
-    -webkit-font-smoothing: antialiased;
-    background: linear-gradient(180deg, #fef8f5 0%, #fffdfd 100%);
+    /* font-family: gilroy, serif;
+    -webkit-font-smoothing: antialiased; */
+    /* font-family: "Outfit", sans-serif; */
+    font-family: "Hind Siliguri", sans-serif;
+    background: #fffaf8;
+    position: relative;
+    /* background: linear-gradient(180deg, #fef8f5 0%, #fffdfd 100%); */
 }
 
 .inner__container {
@@ -31,7 +38,7 @@ body {
 
 span {
     color: #e36d1c;
-    font-family: gilroy-bold;
+    /* font-family: gilroy-bold; */
 }
 
 @media screen and (max-width: 991px) {

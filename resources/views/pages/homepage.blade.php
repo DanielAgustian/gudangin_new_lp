@@ -55,7 +55,7 @@
     </section>
 
     <section class="home__problem" data-aos="fade-up">
-        <h2>Kami paham <span>permasalahanmu</span> <br> <span>jalanin bisnis online</span></h2>
+        <h2>Kami paham <span><strong>permasalahanmu</strong></span> <br> <span>jalanin bisnis online</span></h2>
 
         <div id="problem_group" style="overflow: hidden; margin-bottom: 15px">
             <div class="problem_wrap">
@@ -270,7 +270,7 @@
     <section class="home__fitur">
         <div class="container" data-aos="fade-up" style="position: relative; z-index: 3">
             <div class="inner__container">
-                <h2>Fiturnya <span>gudangin</span></h2>
+                <h2>Ini yang <span>gudangin</span> lakukan untuk kamu</h2>
 
                 <div class="row">
                     <div class="col-lg-4">
@@ -363,7 +363,8 @@
                     <div class="card-body">
                         <p>Kamu stay at home kembangin bisnisnya</p>
                         <h2>Biar Kami yang <span>kelola dan kembangkan</span> usaha online Anda!</h2>
-                        <button class="btn">Coba Gratis <i class="fas fa-chevron-right"></i></button>
+                        <button data-toggle="modal" data-target="#exampleModal" class="btn">Coba Gratis <i
+                                class="fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -372,17 +373,78 @@
 
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
+    <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
-                <div class="modal-body">
+                <div class="modal-body home__modal">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">&times;</span>
                     </button>
-                    <h1>asdasdd</h1>
-                    <h1>asdasdd</h1>
-                    <h1>asdasdd</h1>
-                    <h1>asdasdd</h1>
+
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 text-center">
+                            <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
+
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Agregasi Stok SKU.
+                                        Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Agregasi Chat dari semua marketplace</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Otomatisasi Order List</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
+                            <div class="card">
+                                <div class="card-body text-left">
+                                    <strong>
+                                        <p>One Stop Order</p>
+                                    </strong>
+                                    <p>Management System</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-left">
+                                    <strong>
+                                        <p>Stock Aggregation</p>
+                                    </strong>
+                                    <p>integrated to major Marketplace in Indonesia</p>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-body text-left">
+                                    <strong>
+                                        <p>Chat Center</p>
+                                    </strong>
+                                    <p>Integrated to major Marketplace in Indonesia</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 text-center">
+                            <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p>Hyperlocal Fulfillment System</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
                 </div>
             </div>
         </div>
@@ -396,6 +458,7 @@
 
     <script>
         AOS.init();
+        // $('#exampleModal').modal('show')
     </script>
     <script>
         $("#problem_group").grouploop({
