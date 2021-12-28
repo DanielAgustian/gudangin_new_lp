@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PageController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +19,5 @@ Route::get('/', [PageController::class, 'homePage'])->name('homePage');
 Route::get('/harga', [PageController::class, 'pricingPage'])->name('pricingPage');
 Route::get('/petunjuk', [PageController::class, 'faqPage'])->name('faqPage');
 Route::get('/fitur', [PageController::class, 'fiturPage'])->name('fiturPage');
+
+Route::get('/daftar', [RegisterController::class, 'registerPage'])->name('registerPage');

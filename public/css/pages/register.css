@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
+
+body {
+    font-family: "Hind Siliguri", sans-serif;
+    background: #fffaf8;
+    position: relative;
+}
+
+.register__section {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 5rem;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.register__form_wrapper {
+    width: 60%;
+    position: relative;
+    z-index: 3;
+}
+
+.bg__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+}
+
+.register__section h3 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: #000000;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.register__section label {
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #8f8f8f;
+}
+
+.register__section input,
+.register__section .input-group-text {
+    background: #ffffff;
+    border: 1px solid #e38b30;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 48px;
+}
+.register__section input {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.register__section .input-group-text {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 36px;
+}
+
+.register__section input:focus {
+    outline: none;
+    box-shadow: none;
+    border: 1px solid #e38b30;
+}
+
+.register__section button {
+    background: #e38b30;
+    color: #ffffff;
+    width: 100%;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+.register__section button:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.register__section button:hover {
+    color: #ffffff;
+}
+
+/* .register__syarat {
+    width: 0%;
+} */
+
+.register__syarat .form-check {
+    display: flex;
+    align-items: baseline;
+}
+
+.register__syarat label {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 17px;
+    color: #151515;
+    margin: 0;
+}
+
+input:focus::placeholder {
+    color: transparent;
+}
+
+@media screen and (max-width: 425px) {
+    .img__section {
+        display: none !important;
+    }
+
+    .register__section {
+        padding-top: 25px;
+        padding-bottom: 25px;
+        padding-left: 1rem;
+        width: 100%;
+    }
+
+    .register__form_wrapper {
+        width: 100%;
+    }
+
+    .register__form_wrapper .register__logo {
+        width: 250px;
+    }
+
+    .register__section h3 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+    }
+}
