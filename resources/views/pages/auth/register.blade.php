@@ -197,6 +197,9 @@
         integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.4/dist/sweetalert2.all.min.js"
+        integrity="sha256-BkUgaETbff6QynrhYiY+ZltDJW+2F9xFD0tEyHJd+UQ=" crossorigin="anonymous"></script>
+
     <script>
         $(document).ready(function() {
             $('#whatsapp').mask('000-0000-00000');
@@ -236,9 +239,13 @@
                 },
                 type: 'post',
                 success: function(data) {
-                    console.log(data)
+                    // console.log(data)
                     if (data.status == 'success') {
-                        console.log('berhasil gan')
+                        Swal.fire({
+                            title: 'Kode OTP Berhasil Dikirim!',
+                            text: `Silahkan cek email dan masukkan kode OTP`,
+                            icon: 'success',
+                        })
                     }
                 }
             })
@@ -272,13 +279,31 @@
                     },
                     type: 'post',
                     success: function(data) {
-                        console.log(data)
-                        if (data.status == 'success') {
-                            console.log('berhasil gan')
-                        }
+                        // console.log(data)
+                        window.location.replace(
+                            `https://dashboard.gudangin.id/get-data-user?tk=${data.token}`);
                     },
                     error: function(err) {
-                        console.log(err)
+                        // console.log(err)
+                        if (err.responseJSON.whatsapp) {
+                            Swal.fire({
+                                title: 'Oops!',
+                                text: `${err.responseJSON.whatsapp[0]}`,
+                                icon: 'warning',
+                            })
+                        } else if (err.responseJSON.email) {
+                            Swal.fire({
+                                title: 'Oops!',
+                                text: `${err.responseJSON.email[0]}`,
+                                icon: 'warning',
+                            })
+                        } else if (err.responseJSON.status) {
+                            Swal.fire({
+                                title: 'Oops!',
+                                text: `${err.responseJSON.message}`,
+                                icon: 'warning',
+                            })
+                        }
                     }
                 })
             }
