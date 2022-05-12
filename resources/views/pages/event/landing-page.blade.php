@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <section class="home__hero">
+    <section class="home__hero" >
         <img src="{{ asset('images/ornament/hero-wave.svg') }}" alt="" class="home__hero_orn">
         <div class="container" style="position: relative; z-index: 3">
             <div class="inner__container">
@@ -174,7 +174,7 @@
                     </div>
                     <div class="col-lg-6  home__solution_right">
                         {{-- <h4 class="mt-5">#gudanginAja</h4> --}}
-                        <h2 class=" text-center">Siapa saja yang sudah menggunakan <span>gudangin</span>?</h2>
+                        <h2 class=" text-center">Siapa Saja Yang Menggunakan <span>Gudangin</span>?</h2>
                         <div class="divider-15">
 
                         </div>
@@ -223,7 +223,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-5 home__works_left">
                         {{-- <h4>#gudanginAja</h4> --}}
-                        <h2>Apa kata mereka tentang <span>gudangin</span>?</h2>
+                        <h2>Apa Kata Mereka Tentang <span>Gudangin</span>?</h2>
                         <h6>Integritas kami merupakan hal yang paling krusial di bisnis. Oleh karena itu, klien-klien kami disini adalah bukti kami tetap menjaga integritas kami. </h6>
                     </div>
                     <div class="col-lg-7 home__works_right">
@@ -343,6 +343,8 @@
         </div>
         
         <div class="container">
+            <h2 style="font-weight: 800" class="text-center mb-4">Berminat Untuk Diskusi Dengan <span>Account Executive</span> Kami?</h2>
+            
             <div class="row ">
                 <div class="col-md-6">
                     <div class="home__modal px-3 left_form">
