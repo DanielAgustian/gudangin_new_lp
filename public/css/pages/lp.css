@@ -5,6 +5,7 @@
 
 .img-klien{
   width: 100%;
+  border-radius: 5px;
   object-fit: contain;
 }
 .divider-15{

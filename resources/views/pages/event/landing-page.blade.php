@@ -1,15 +1,14 @@
 @extends('master')
 
 @section('cssinline')
-  <link rel="stylesheet" href="{{asset('css/pages/lp.css')}}?v=0.0.2.7">
-  <link
-      rel="stylesheet"
-      href="https://unpkg.com/swiper/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="{{ asset('css/pages/lp.css') }}?v=0.0.2.8">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <style>
+        
+    </style>
 @endsection
 
 @section('content')
-    
     <section class="home__hero">
         <img src="{{ asset('images/ornament/hero-wave.svg') }}" alt="" class="home__hero_orn">
         <div class="container" style="position: relative; z-index: 3">
@@ -17,7 +16,7 @@
                 <div class="row align-items-center">
                     <div class="col-lg-6 hero__left">
                         <div class="home__hero_left">
-                            <h5>gudangin</h5>
+                            {{-- <h5>gudangin</h5> --}}
                             <h1>Jualan <strong>Lebih Banyak</strong> Kirim <strong>Lebih Cepat</strong> Kemanapun Tetap
                                 <strong>Lebih Hemat</strong>
                             </h1>
@@ -65,14 +64,14 @@
 
 
     </section>
-
+    <div style="background-color: white; height: 30px"></div>
     <section class="home__fitur">
         <div class="container" data-aos="fade-up" style="position: relative; z-index: 3">
             <div class="inner__container">
-              <div style="height: 25px;">
+                <div style="height: 25px;">
 
-              </div>
-                <h2>Mengapa bisnismu harus menggunakan <span>gudangin</span>?</h2>
+                </div>
+                <h2 class="text-center">Mengapa Bisnismu Harus Menggunakan <span>Gudangin</span>?</h2>
 
                 <div class="row justify-content-center">
                     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
@@ -104,17 +103,18 @@
             </div>
         </div>
     </section>
-    <section class="home__benefit">
-        <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn">
+    <section class="home__benefit" style=" background-color: transparent !important;">
+        {{-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn"> --}}
         <div class="container" style="position: relative; z-index: 3" data-aos="fade-up">
             <div class="inner__container">
-              <div style="height: 30px;">
+                <div style="height: 55px;">
 
-              </div>
+                </div>
                 <div class="row">
                     <div class="col-lg-6 home__benefit_left">
-                        <h4>#gudanginAja</h4>
-                        <h2>Benefit <span>gudangin</span> bagi <br>bisnis onlinemu </h2>
+                        
+                        {{-- <h4>#gudanginAja</h4> --}}
+                        <h2>Benefit <span>Gudangin</span> Bagi <br>Bisnis Onlinemu </h2>
 
                         <div class="card">
                             <div class="card-body">
@@ -156,34 +156,61 @@
                         </div>
                     </div>
                 </div>
+                <div style="height: 55px;">
+
+                </div>
             </div>
         </div>
     </section>
-    <section class="home__solution">
+    <section class="home__solution" style="background-color: white">
         <div class="container" data-aos="fade-up">
             <div class="inner__container">
+                <div style="height: 55px;">
+
+                </div>
                 <div class="row align-items-center">
                     <div class="col-lg-6 home__solution_left">
                         <img src="{{ asset('images/illustration/solution-2.png') }}" alt="">
                     </div>
-                    <div class="col-lg-6 home__solution_right">
-                        <h4>#gudanginAja</h4>
-                        <h2>Siapa saja yang sudah menggunakan <span>gudangin</span>?</h2>
+                    <div class="col-lg-6  home__solution_right">
+                        {{-- <h4 class="mt-5">#gudanginAja</h4> --}}
+                        <h2 class=" text-center">Siapa saja yang sudah menggunakan <span>gudangin</span>?</h2>
                         <div class="divider-15">
 
                         </div>
                         <div class="row justify-content-around">
-                            <div class="col-lg-4 col-md-4 col-5 mb-4">
-                              <img src="{{asset('images/client/WGM.png')}}" alt="" class="img-klien">
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/WGM.png') }}" alt="" class="img-klien">
                             </div>
-                            <div class="col-lg-4 col-md-4 col-5 mb-4">
-                              <img src="{{asset('images/client/WHW2_1.png')}}" alt="" class="img-klien">
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/WHW2_1.png') }}" alt="" class="img-klien">
                             </div>
-                            <div class="col-lg-4 col-md-4 col-5 mb-4">
-                              <img src="{{asset('images/client/logo-warisan.png')}}" alt="" class="img-klien">
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/logo-warisan.png') }}" alt="" class="img-klien">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/acaraki.png') }}" alt="" class="img-klien">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/bardi.png') }}" alt="" class="img-klien">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/lpcb.png') }}" alt="" class="img-klien">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/lasegar.png') }}" alt="" class="img-klien">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/obida.png') }}" alt="" class="img-klien">
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-5 mb-4">
+                                <img src="{{ asset('images/client/siang-pure.png') }}" alt="" class="img-klien">
                             </div>
                         </div>
                     </div>
+                </div>
+                <div style="height: 55px;">
+
                 </div>
             </div>
         </div>
@@ -195,84 +222,84 @@
 
                 <div class="row align-items-center">
                     <div class="col-lg-5 home__works_left">
-                        <h4>#gudanginAja</h4>
+                        {{-- <h4>#gudanginAja</h4> --}}
                         <h2>Apa kata mereka tentang <span>gudangin</span>?</h2>
-                        <h6>Terdapat banyak cerita menarik dan keuntungan yang didapat dari <span>gudangin</span>. Simak cerita mereka disini. </h6>
+                        <h6>Integritas kami merupakan hal yang paling krusial di bisnis. Oleh karena itu, klien-klien kami disini adalah bukti kami tetap menjaga integritas kami. </h6>
                     </div>
                     <div class="col-lg-7 home__works_right">
                         <!-- <button class="sec" data-toggle="modal" data-target="#exampleModal">Pelajari
-                            Sekarang</button>
-                        <button class="prm">Gabung Sekarang</button> -->
+                                    Sekarang</button>
+                                <button class="prm">Gabung Sekarang</button> -->
                         <div class="swiper w-100 mySwiper">
-                          <div class="swiper-wrapper">
-                            <!-- <div class="swiper-slide">
-                              <div class="card rounded shadow">
-                                <div class="card-body">
-                                  <div class="d-flex justify-content-center">
-                                    <img src="" alt="" class="img-client">
-                                  </div>
-                                  <h5 style="font-weight: 700" class="text-center mb-0"></h5>
-                                  <h5 class="text-center"></h5>
-                                  <p style="color:#e36d1c" class="text-center">
+                            <div class="swiper-wrapper">
+                                <!-- <div class="swiper-slide">
+                                      <div class="card rounded shadow">
+                                        <div class="card-body">
+                                          <div class="d-flex justify-content-center">
+                                            <img src="" alt="" class="img-client">
+                                          </div>
+                                          <h5 style="font-weight: 700" class="text-center mb-0"></h5>
+                                          <h5 class="text-center"></h5>
+                                          <p style="color:#e36d1c" class="text-center">
 
-                                  </p>
-                                </div>
-                              </div>
-                            </div> -->
+                                          </p>
+                                        </div>
+                                      </div>
+                                    </div> -->
 
-                            @component('component.testi-card')
-                              @slot('img')
-                                https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-                              @endslot
-                              @slot('name')
-                                Bambang Adi
-                              @endslot
-                              @slot('jabatan')
-                                Manager Operasional PT. ABC
-                              @endslot
-                              @slot('details')
-                                Terima kasih untuk para team Gudangin yang
-                                telah membantu dalam mengembangkan dan
-                                mengelola bisnis online saya sehingga omset
-                                penjualan produk saya semakin meningkat.
-                              @endslot
-                            @endcomponent
-                            @component('component.testi-card')
-                              @slot('img')
-                                https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-                              @endslot
-                              @slot('name')
-                                Bambang Adi
-                              @endslot
-                              @slot('jabatan')
-                                Manager Operasional PT. ABC
-                              @endslot
-                              @slot('details')
-                                Terima kasih untuk para team Gudangin yang
-                                telah membantu dalam mengembangkan dan
-                                mengelola bisnis online saya sehingga omset
-                                penjualan produk saya semakin meningkat.
-                              @endslot
-                            @endcomponent
-                            @component('component.testi-card')
-                              @slot('img')
-                                https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
-                              @endslot
-                              @slot('name')
-                                Bambang Adi
-                              @endslot
-                              @slot('jabatan')
-                                Manager Operasional PT. ABC
-                              @endslot
-                              @slot('details')
-                                Terima kasih untuk para team Gudangin yang
-                                telah membantu dalam mengembangkan dan
-                                mengelola bisnis online saya sehingga omset
-                                penjualan produk saya semakin meningkat.
-                              @endslot
-                            @endcomponent
-                          </div>
-                          <div class="swiper-pagination"></div>
+                                @component('component.testi-card')
+                                    @slot('img')
+                                        https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+                                    @endslot
+                                    @slot('name')
+                                        Bambang Adi
+                                    @endslot
+                                    @slot('jabatan')
+                                        Manager Operasional PT. ABC
+                                    @endslot
+                                    @slot('details')
+                                        Terima kasih untuk para team Gudangin yang
+                                        telah membantu dalam mengembangkan dan
+                                        mengelola bisnis online saya sehingga omset
+                                        penjualan produk saya semakin meningkat.
+                                    @endslot
+                                @endcomponent
+                                @component('component.testi-card')
+                                    @slot('img')
+                                        https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+                                    @endslot
+                                    @slot('name')
+                                        Bambang Adi
+                                    @endslot
+                                    @slot('jabatan')
+                                        Manager Operasional PT. ABC
+                                    @endslot
+                                    @slot('details')
+                                        Terima kasih untuk para team Gudangin yang
+                                        telah membantu dalam mengembangkan dan
+                                        mengelola bisnis online saya sehingga omset
+                                        penjualan produk saya semakin meningkat.
+                                    @endslot
+                                @endcomponent
+                                @component('component.testi-card')
+                                    @slot('img')
+                                        https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+                                    @endslot
+                                    @slot('name')
+                                        Bambang Adi
+                                    @endslot
+                                    @slot('jabatan')
+                                        Manager Operasional PT. ABC
+                                    @endslot
+                                    @slot('details')
+                                        Terima kasih untuk para team Gudangin yang
+                                        telah membantu dalam mengembangkan dan
+                                        mengelola bisnis online saya sehingga omset
+                                        penjualan produk saya semakin meningkat.
+                                    @endslot
+                                @endcomponent
+                            </div>
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -294,180 +321,186 @@
 
 
 
-    <section class="home__footer" data-aos="fade-up">
-        <div class="container">
-            <div class="inner__container">
-                <div class="card">
-                    <div class="card-body">
-                        <p>Kamu stay at home kembangin bisnisnya</p>
-                        <h2>Biar kami yang <span>kelola dan kembangkan</span> usaha online anda!</h2>
-                        <button  class="btn btn-join">Join Now<i
-                                class="fas fa-chevron-right"></i></button>
+    
+
+    <section class="home__benefit section-form " data-aos="fade-up">
+        {{-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn">  --}}
+        <section class="home__footer" data-aos="fade-up">
+            <div class="container">
+                <div class="inner__container">
+                    <div class="card">
+                        <div class="card-body">
+                            <p>Kamu stay at home kembangin bisnisnya</p>
+                            <h2>Biar kami yang <span>kelola dan kembangkan</span> usaha online anda!</h2>
+                            <button class="btn btn-join">Join Now<i class="fas fa-chevron-right"></i></button>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
+        <div style="height: 35px;">
+
         </div>
-    </section>
+        
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <div class="home__modal px-3 left_form">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-4 col-md-6 text-center">
+                                <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
 
-    <section class="home__benefit section-form " data-aos = "fade-up">
-      <div style="height: 35px;">
-
-      </div>
-      <!-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn"> -->
-      <div class="container">
-        <div class="row ">
-          <div class="col-md-6">
-            <div class="home__modal px-3 left_form">
-              <div class="row justify-content-center">
-                  <div class="col-lg-4 col-md-6 text-center">
-                      <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
-
-                      <div class="card">
-                          <div class="card-body">
-                              <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-body">
-                              <p>Agregasi Stok SKU.
-                                  Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace</p>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-body">
-                              <p>Agregasi Chat dari semua marketplace</p>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-body">
-                              <p>Otomatisasi Order List</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6  text-center">
-                      <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
-                      <div class="card">
-                          <div class="card-body text-left">
-                              <strong>
-                                  <p>One Stop Order</p>
-                              </strong>
-                              <p>Management System</p>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-body text-left">
-                              <strong>
-                                  <p>Stock Aggregation</p>
-                              </strong>
-                              <p>integrated to major Marketplace in Indonesia</p>
-                          </div>
-                      </div>
-                      <div class="card">
-                          <div class="card-body text-left">
-                              <strong>
-                                  <p>Chat Center</p>
-                              </strong>
-                              <p>Integrated to major Marketplace in Indonesia</p>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="col-lg-4 col-md-6  text-center">
-                      <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
-                      <div class="card">
-                          <div class="card-body">
-                              <p>Hyperlocal Fulfillment System</p>
-                          </div>
-                      </div>
-                  </div>
-              </div>
-
-              <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
-            </div>
-
-          </div>
-          <div class="col-md-6">
-              <form class=" register__section" style="position: relative">
-
-                <!-- <img src="{{ asset('images/landing-page/background_modal.png') }}" alt="" class="bg__img"> -->
-                <div class="register__form_wrapper">
-
-                    <!-- <img src="{{ asset('images/navbar_logo.svg') }}" alt="" class="register__logo"> -->
-                    <h3 class="mt-6 ">Berminat diskusi dengan <span>Account Executive</span>  kami?</h3>
-                    <div class="form-group">
-                        <label>Nama</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">
-                                  <i class="fas fa-user" style="margin-left: 3px;"></i>
-                                </span></div>
-                            <input type="email" class="form-control" name="email" id="userEmail"
-                                placeholder="Silahkan masukkan Alamat Nama Anda"
-                                onkeypress="clearError('errEmail')" />
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Agregasi Stok SKU.
+                                            Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Agregasi Chat dari semua marketplace</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Otomatisasi Order List</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  text-center">
+                                <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
+                                <div class="card">
+                                    <div class="card-body text-left">
+                                        <strong>
+                                            <p>One Stop Order</p>
+                                        </strong>
+                                        <p>Management System</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body text-left">
+                                        <strong>
+                                            <p>Stock Aggregation</p>
+                                        </strong>
+                                        <p>integrated to major Marketplace in Indonesia</p>
+                                    </div>
+                                </div>
+                                <div class="card">
+                                    <div class="card-body text-left">
+                                        <strong>
+                                            <p>Chat Center</p>
+                                        </strong>
+                                        <p>Integrated to major Marketplace in Indonesia</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6  text-center">
+                                <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <p>Hyperlocal Fulfillment System</p>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <span id="errName" class="d-none" style="font-size: 12px; color: #FF0000">Nama
-                            Harus
-                            diisi dengan format yang
-                            benar</span>
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">
-                                    <img src="{{ asset('images/icons/email.svg') }}" alt="">
-                                </span></div>
-                            <input type="email" class="form-control" name="email" id="userEmail"
-                                placeholder="Silahkan masukkan Alamat Email Anda"
-                                onkeypress="clearError('errEmail')" />
-                        </div>
-                        <span id="errEmail" class="d-none" style="font-size: 12px; color: #FF0000">Email
-                            Harus
-                            diisi dengan format yang
-                            benar</span>
+
+                        <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
                     </div>
 
-                    <div class="form-group">
-                        <label>Nomor Whatsapp</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">+62</span></div>
-                            <input id="whatsapp" type="text" class="form-control" name="whatsapp"
-                                placeholder="Silahkan masukkan Nomor Whatsapp Anda"
-                                onkeypress="clearError('errWa')" />
-                        </div>
-                        <span id="errWa" class="d-none" style="font-size: 12px; color: #FF0000">Nomor
-                            Whatsapp Harus
-                            diisi dengan format yang
-                            benar</span>
-                    </div>
+                </div>
+                <div class="col-md-6">
+                    <form class=" register__section" method="POST" action="{{ route('makeDiscussion') }}"
+                        style="position: relative">
+                        @csrf
+                        <!-- <img src="{{ asset('images/landing-page/background_modal.png') }}" alt="" class="bg__img"> -->
+                        <div class="register__form_wrapper">
+
+                            <!-- <img src="{{ asset('images/navbar_logo.svg') }}" alt="" class="register__logo"> -->
+                            <h5 class="mt-6 text-center">Diskusi dengan <span>Account Executive Kami </span></h5>
+                            <div class="form-group">
+                                <label>Nama <span style="color:red">*</span> </label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">
+                                            <i class="fas fa-user" style="margin-left: 3px;"></i>
+                                        </span></div>
+                                    <input type="text" class="form-control" name="name" id="userName"
+                                        placeholder="Silahkan masukkan Alamat Nama Anda" required
+                                        onkeypress="clearError('errEmail')" />
+                                </div>
+                                <span id="errName" class="d-none" style="font-size: 12px; color: #FF0000">Nama
+                                    Harus
+                                    diisi dengan format yang
+                                    benar</span>
+                            </div>
+                            <div class="form-group">
+                                <label>Email <span style="color:red">*</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">
+                                            <img src="{{ asset('images/icons/email.svg') }}" alt="">
+                                        </span></div>
+                                    <input type="email" class="form-control" name="email" id="userEmail"
+                                        placeholder="Silahkan masukkan Alamat Email Anda" required
+                                        onkeypress="clearError('errEmail')" />
+                                </div>
+                                <span id="errEmail" class="d-none" style="font-size: 12px; color: #FF0000">Email
+                                    Harus
+                                    diisi dengan format yang
+                                    benar</span>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Nomor Whatsapp <span style="color:red">*</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">+62</span></div>
+                                    <input id="whatsapp" type="number" class="form-control" name="whatsapp"
+                                        placeholder="Nomor Whatsapp Anda" required onkeypress="clearError('errWa')" />
+                                </div>
+                                <span id="errWa" class="d-none" style="font-size: 12px; color: #FF0000">Nomor
+                                    Whatsapp Harus
+                                    diisi dengan format yang
+                                    benar</span>
+                            </div>
 
 
-                    <div class="form-group">
-                        <label>Nama Perusahaan</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text">
-                                    <!-- <img src="{{ asset('images/icons/password.svg') }}" alt=""> -->
-                                    <i class="fas fa-building" style="margin-left: 4px;"></i>
-                                </span></div>
-                            <input id="input-perusahaan" type="text" class="form-control" name="whatsapp"
-                                placeholder="Nama Perusahaan" style="border-right: transparent"
-                               />
-
-                        </div>
-                        <!-- <span id="errPass" class="d-none" style="font-size: 12px; color: #FF0000">Masukkan
+                            <div class="form-group">
+                                <label>Nama Perusahaan <span style="color:red">*</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text">
+                                            <!-- <img src="{{ asset('images/icons/password.svg') }}" alt=""> -->
+                                            <i class="fas fa-building" style="margin-left: 4px;"></i>
+                                        </span></div>
+                                    <input id="input-perusahaan" type="text" class="form-control" name="company"
+                                        placeholder="Nama Perusahaan" style="border-right: transparent" required />
+                                    <span id="errCompany" class="d-none"
+                                        style="font-size: 12px; color: #FF0000">Nomor
+                                        Nama Perusahaan Harus
+                                        diisi </span>
+                                </div>
+                                <!-- <span id="errPass" class="d-none" style="font-size: 12px; color: #FF0000">Masukkan
                             Kata
                             Sandi</span> -->
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <div class="input-group">
-                            <div class="input-group-prepend"><span class="input-group-text"><img src="{{ asset('images/icons/email.svg') }}" alt=""></span></div>
-                            <!-- <input id="date" type="date" class="form-control" name="date"
+                            </div>
+                            <div class="form-group">
+                                <label>Message <span style="color:red">*</span></label>
+                                <div class="input-group">
+                                    <div class="input-group-prepend"><span class="input-group-text"><img
+                                                src="{{ asset('images/icons/email.svg') }}" alt=""></span></div>
+                                    <!-- <input id="date" type="date" class="form-control" name="date"
                                 placeholder="Silahkan masukkan tanggal yang diinginkan"
                                  /> -->
-                                 <textarea name="name" rows="8" cols="25" class="form-control" placeholder="message"></textarea>
-                        </div>
-                        <span id="errDate" class="d-none" style="font-size: 12px; color: #FF0000">Tanggal harus diisi dengan benar</span>
-                    </div>
+                                    <textarea name="message" rows="8" cols="25" class="form-control" placeholder="message" required></textarea>
+                                </div>
+                                <span id="errMessage" class="d-none" style="font-size: 12px; color: #FF0000">Pesan
+                                    tidak boleh kosong</span>
+                            </div>
 
-                    <!-- <div class="register__syarat">
+                            <!-- <div class="register__syarat">
                         <div class="form-check">
                             <input class="form-check-input" type="checkbox" value="" id="ckBox"
                                 style="height: unset; margin-top: 0.2rem">
@@ -477,108 +510,107 @@
                             </label>
                         </div>
                     </div> -->
+                            <div class="g-recaptcha" data-callback="recaptchaCallback"
+                                data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
+                            <button class="btn btn-prim btn-bigger mt-2" id="registerBtn" disabled>Join Now</button>
 
-                    <button class="btn btn-prim btn-bigger mt-2" id="registerBtn"
-                        >Join Now</button>
-
-                    <!-- <div class="text-center my-3">
+                            <!-- <div class="text-center my-3">
                         <p>Sudah Punya Akun? <a href="">Log In</a></p>
                     </div> -->
 
-                </div>
-            </form>
+                        </div>
+                    </form>
 
-          </div>
+                </div>
+            </div>
+
         </div>
 
-      </div>
-
     </section>
-    <div style="height: 50px">
+    <div style="height: 50px; background-color: white">
 
     </div>
     <!-- Modal -->
     <!-- <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-body home__modal">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+                <div class="modal-dialog modal-lg modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-body home__modal">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
 
-                    <div class="row justify-content-center">
-                        <div class="col-lg-4 col-md-6 text-center">
-                            <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-4 col-md-6 text-center">
+                                    <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
 
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p>Agregasi Stok SKU.
+                                                Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p>Agregasi Chat dari semua marketplace</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p>Otomatisasi Order List</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 text-center">
+                                    <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
+                                    <div class="card">
+                                        <div class="card-body text-left">
+                                            <strong>
+                                                <p>One Stop Order</p>
+                                            </strong>
+                                            <p>Management System</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body text-left">
+                                            <strong>
+                                                <p>Stock Aggregation</p>
+                                            </strong>
+                                            <p>integrated to major Marketplace in Indonesia</p>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="card-body text-left">
+                                            <strong>
+                                                <p>Chat Center</p>
+                                            </strong>
+                                            <p>Integrated to major Marketplace in Indonesia</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 text-center">
+                                    <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
+                                    <div class="card">
+                                        <div class="card-body">
+                                            <p>Hyperlocal Fulfillment System</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Agregasi Stok SKU.
-                                        Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Agregasi Chat dari semua marketplace</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Otomatisasi Order List</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 text-center">
-                            <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
-                            <div class="card">
-                                <div class="card-body text-left">
-                                    <strong>
-                                        <p>One Stop Order</p>
-                                    </strong>
-                                    <p>Management System</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body text-left">
-                                    <strong>
-                                        <p>Stock Aggregation</p>
-                                    </strong>
-                                    <p>integrated to major Marketplace in Indonesia</p>
-                                </div>
-                            </div>
-                            <div class="card">
-                                <div class="card-body text-left">
-                                    <strong>
-                                        <p>Chat Center</p>
-                                    </strong>
-                                    <p>Integrated to major Marketplace in Indonesia</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 text-center">
-                            <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p>Hyperlocal Fulfillment System</p>
-                                </div>
-                            </div>
+
+                            <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
                         </div>
                     </div>
-
-                    <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
                 </div>
-            </div>
-        </div>
-    </div> -->
+            </div> -->
 @endsection
 
 
 @section('pageJS')
-
     <script src="{{ asset('plugin/marquee-scroll/dist/grouploop-1.0.3.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
@@ -608,30 +640,99 @@
     </script>
 
 
-     <!-- Initialize Swiper -->
-     <script>
-       var swiper = new Swiper(".mySwiper", {
-         pagination: {
-           el: ".swiper-pagination",
-         },
-         loop: true,
-         autoplay: {
-           delay: 15000,
-         },
-       });
-     </script>
-     <!-- Logic for Click Button Join Now -->
-     <script type="text/javascript">
-       $('.btn-join').click(function() {
-           $('html, body').animate({
-               scrollTop: ($(".section-form").offset().top) -120
-           }, 2500);
-       });
-     </script>
+    <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+            autoplay: {
+                delay: 15000,
+            },
+        });
+    </script>
+    <!-- Logic for Click Button Join Now -->
+    <script type="text/javascript">
+        $('.btn-join').click(function() {
+            $('html, body').animate({
+                scrollTop: ($(".section-form").offset().top) - 120
+            }, 2500);
+        });
+    </script>
 
-     <script type="text/javascript">
-     $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-      })
-     </script>
+    <script type="text/javascript">
+        $(function() {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    <script type="text/javascript">
+        function recaptchaCallback() {
+            $('#registerBtn').removeAttr('disabled');
+        }
+    </script>
+    <script>
+        $('.register__section').on('submit', function(e) {
+
+            let errorEmail = false;
+            let errorName = false;
+            let errorPhone = false;
+            let errorCompany = false;
+            let errorMessage = false;
+
+            let email = $('input[name="email"]').val() ?? "";
+            let name = $('input[name="name"]').val();
+            let phone = $('input[name="whatsapp"]').val();
+            let company = $('input[name="company"]').val();
+            let message = $('textarea[name="message"]').val();
+
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+            if (!email.match(mailformat)) {
+                console.log("wrong email");
+                errorEmail = true;
+                $('#errEmail').removeClass('d-none')
+
+            } else {
+                $('#errEmail').addClass('d-none');
+            }
+
+            if (name.length < 2) {
+                console.log("name empty");
+                errorName = true;
+                $('#errName').removeClass('d-none');
+            } else {
+                $('#errName').addClass('d-none');
+            }
+            if (phone.length < 9) {
+                console.log("phone error");
+                errorPhone = true;
+                $('#errWa').removeClass('d-none');
+            } else {
+                $('#errWa').addClass('d-none');
+            }
+
+            if (company.length < 3) {
+                console.log("company error");
+                errorCompany = true;
+                $('#errCompany').removeClass('d-none');
+            } else {
+                $('#errCompany').addClass('d-none');
+            }
+
+            if (message.length < 3) {
+                console.log("message empty");
+                errorMessage = true;
+                $('#errMessage').removeClass('d-none');
+            } else {
+                $('#errMessage').addClass('d-none');
+            }
+
+
+            if (errorName || errorEmail || errorPhone || errorCompany || errorMessage) {
+                console.log("ONE OF THEM IS EMPTY/WRONG");
+                e.preventDefault();
+            }
+        })
+    </script>
 @endsection

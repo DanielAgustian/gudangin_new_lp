@@ -36,6 +36,8 @@ Route::get('/hubungi-kami', [NewHomepageController::class, 'contactUsPage'])->na
 Route::get('/blogs', [NewHomepageController::class, 'blogPage'])->name('blogPage');
 Route::get('/blogs/{slug}', [NewHomepageController::class, 'blogDetailPage'])->name('blogDetailPage');
 
+
+
 // POST PROCESS
 Route::post('/post/discussion', [PostController::class, 'makeDiscussion'])->name('makeDiscussion');
 Route::post('/post/contact-us', [PostController::class, 'contactUs'])->name('contactUsPost');
