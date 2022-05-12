@@ -23,13 +23,20 @@
 
 
     <!-- Styles -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
         integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- Theme Styles -->
-    <link href="{{ asset('/css/custom.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ asset('/css/custom.css') }}?v=1.01.3" rel="stylesheet" type="text/css">
+    <link href="{{ asset('css/pages/footer.css') }}?v=1.2.4" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{ asset('css/pages/navbar.css') }}?v=1.1.1">
+    <link href="{{ asset('/css/pages/new-style.css') }}?v=0.6.1" rel="stylesheet" type="text/css">
     @yield('cssinline')
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -63,6 +70,20 @@
         })(window, document, 'script', 'dataLayer', 'GTM-N2KDD6F');
     </script>
     <!-- End Google Tag Manager -->
+    <!-- Facebook Pixel Code -->
+    <script type="text/javascript">
+    !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '262143422740140');
+        fbq('track', 'PageView');
+    </script>
+    <!-- End Facebook Pixel Code -->
 </head>
 
 <body>
@@ -71,18 +92,67 @@
             style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Facebook Pixel Code -->
+    <noscript><img height="1" width="1" style="display:none"
+          src="https://www.facebook.com/tr?id=262143422740140&ev=PageView&noscript=1"
+          /></noscript>
+    <!-- End FB Pixel Code -->
+
     @include('component.navbar')
+    <a class="btn-wa" data-toggle="tooltip" data-placement="left" title="Kami Siap Membantu Anda">
+      <i class="fab fa-whatsapp"></i>
+    </a>
     @yield('content')
 
+    @include('component.footer')
+    <div class="">
+
+    </div>
 
     <!-- Javascripts -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.js">
+
+    </script>
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous">
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.3.10/dist/sweetalert2.all.min.js"></script>
+    <script>
+        $('.btn-wa').on('click', function() {
+            var y = Math.random();
+            if (y < 0.5) {
+                y = 0
+            } else {
+                y = 1
+            }
+            let wa = [6281388886435, 6281388886435]
+            window.open(
+                `https://wa.me/${wa[y]}?text=Halo%2C%20aku%20mau%20bertanya%20tentang%20Layanan%20di%20Gudangin`
+            )
+        })
+    </script>
+    @if (Session::has('successMsg'))
+      <script>
+          console.log('success');
+          Swal.fire(
+              'Success!',
+              'Account executive kami akan segera menghubungi Anda, terima kasih!',
+              'success'
+          );
+      </script>
 
+    @endif
+    @if (Session::has('errorCapcha'))
+        <script>
+
+            Swal.fire(
+                'Gagal',
+                'Capcha kamu kosong!',
+                'error'
+            );
+        </script>
+    @endif
     @yield('pageJS')
 </body>
 

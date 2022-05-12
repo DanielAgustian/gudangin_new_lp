@@ -1,0 +1,45 @@
+.bl-title{
+  font-size: 48px;
+  color: black;
+  font-weight: 700;
+}
+
+.bl-detail{
+  font-size: 16px;
+  color: black;
+  font-weight: 400;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.bl-detail *{
+  font-size: 16px !important;
+  color: black !important;
+  font-weight: 400 !important;
+  text-align: justify;
+}
+
+.back-btn i{
+  font-size: 24px;
+  font-weight: 800;
+  color: #e36d1c;
+}
+.back-btn p{
+  margin-left: 25px;
+  font-size: 24px;
+  font-weight: 600;
+  color: #e36d1c;
+}
+.back-btn:hover i, .back-btn:hover p{
+  color: #954712 !important;
+}
+.click-btn:hover{
+  color: transparent !important;
+}
+.line-divide{
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 100%;
+  height: 1px;
+  background-color: #80808090;
+}

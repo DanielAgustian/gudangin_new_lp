@@ -1,0 +1,7 @@
+.my-pagi .page-item.active .page-link{
+  background-color: #e36d1c  ;
+  border-color: #e36d1c  ;
+}
+.my-pagi .page-link{
+  color: #e36d1c ;
+}

@@ -1,6 +1,6 @@
 @import "./pages/global.css";
-@import "./pages/navbar.css";
-@import "./pages/homepage.css";
+/* @import "./pages/navbar.css?v=1.0.1"; */
+@import "./pages/homepage.css?v=1.0.1";
 @import "./pages/pricing.css";
 @import "./pages/faq.css";
 @import "./pages/fitur.css";

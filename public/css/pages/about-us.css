@@ -1,0 +1,59 @@
+.card.card-visi{
+
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.card-visi .detail{
+  color: #00000090 !important;
+
+}
+
+.card-visi:hover{
+  transform: scale(1.1);
+}
+.card-visi i{
+  color: #e36d1c;
+  font-size: 85px;
+}
+
+
+.card-value{
+  background: white;
+  transition: all 0.5s;
+  border: 1px solid white;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.card-value .titles{
+  color: #e36d1c;
+  font-weight: 600;
+}
+.card-value .details{
+  color: gray;
+  line-height: 23px;
+  transition: all 0.5s;
+}
+
+.card-value i{
+  font-size: 50px;
+  color: #80808080;
+}
+.card-value:hover i,  .card-value:active i, .card-value:focus i{
+  color: white;
+}
+
+.card-value:hover , .card-value:active, .card-value:focus{
+  background: #e36d1c;
+  border: 1px solid #e36d1c;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 2px 4px;
+}
+
+.card-value:hover .details , .card-value:active .details, .card-value:focus .details{
+  color: white;
+
+}
+
+.card-value:hover .titles , .card-value:active .titles, .card-value:focus .titles{
+  color: white;
+
+  font-weight: 700;
+}

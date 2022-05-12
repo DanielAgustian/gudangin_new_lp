@@ -1,0 +1,100 @@
+.blog-card{
+  transition: all 0.5s;
+}
+.blog-card:hover{
+  background: white;
+  transform: scale(1.05);
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.blog-card .title-blog{
+  color: #e36d1c;
+  font-weight: 700;
+  overflow: hidden;
+  line-height: 24px;
+ text-overflow: ellipsis;
+ display: -webkit-box;
+ -webkit-line-clamp: 2; /* number of lines to show */
+         line-clamp: 2;
+ -webkit-box-orient: vertical;
+}
+.home__benefit{
+  overflow: visible !important;
+}
+.home__benefit_orn{
+  z-index: 0 !important;
+}
+
+.blog-card .detail-blog{
+
+  overflow: hidden;
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  color: #7d7d7d !important;
+  max-height: 37px !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.detail-blog p{
+  font-style: normal !important;
+  font-weight: 500 !important;
+  font-size: 13px !important;
+  line-height: 19px !important;
+  color: #7d7d7d !important;
+
+}
+
+.detail-blog font{
+  font-family: hind siliguri, sans-serif !important;
+}
+
+.card.card-latest{
+  display: block;
+  background: white;
+  border-radius: 12px;
+  position: sticky;
+  top: 85px;
+  padding: 1.25rem 1.25rem !important;
+  position: -webkit-sticky;
+}
+
+.card-latest .title-latest{
+  font-weight: 500;
+  color: #e36d1c !important;
+  margin-bottom: 10px;
+  overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-line-clamp: 2; /* number of lines to show */
+           line-clamp: 2;
+   -webkit-box-orient: vertical;
+   transition: all 0.3s;
+}
+
+.card-latest .title-latest:hover{
+  color: #a24e15 !important;
+  text-decoration: none !important;
+  font-weight:600 !important;
+}
+.card-latest a:hover{
+  color: transparent !important;
+
+}
+
+.read-more{
+  color: #e36d1c !important;
+  font-size: 12px;
+  font-weight: 600;
+}
+.blog-card:hover .read-more{
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 996px) {
+  .card.card-latest{
+    position: static;
+  }
+}

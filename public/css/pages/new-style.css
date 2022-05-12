@@ -1,0 +1,215 @@
+.landing_navbar{
+  display: block !important;
+}
+.swiperBanner img{
+  width: 100%;
+  object-fit: contain;
+}
+
+.swiperBanner .swiper-pagination-bullet-active{
+  background: white !important;
+  opacity: 1.0 !important;
+}
+
+.swiperBanner .swiper-pagination-bullet{
+  background: white;
+  opacity: 0.35;
+}
+
+.home__hero_left h1{
+  font-size: 38px;
+}
+.home__hero_left h6{
+  font-size: 17px;
+  line-height: 21px;
+  color: rgba(255,255,255,.95);
+}
+.home__works_left h2{
+  margin-bottom: 10px;
+}
+.home__works_left h6{
+  margin-bottom: 25px;
+}
+.home__benefit{
+  background: white;
+}
+
+.home__category .card{
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.home__category .card i{
+  font-size: 42px;
+  margin-bottom: 15px;
+}
+
+.prim{
+  color: #e36d1c;
+}
+.blue{
+  color: blue;
+}
+.purple{
+  color:#DA70D6;
+}
+
+.home__fitur h2{
+  text-align: start;
+}
+.problem_wrap .problem_item img{
+  width: 100%;
+  object-fit: contain;
+}
+.problem_item .card{
+  width: 200px;
+}
+/* Footer */
+.why-card{
+  border-radius: 15px;
+  width: 100%;
+  min-height: 575px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.why-card .card-body{
+  padding-top: 65px;
+}
+.why-card.orange{
+  background: #e36d1c;
+}
+
+.why-card.white{
+  background: white;
+}
+
+.why-card.white .why-title{
+  color: #e36d1c;
+}
+.why-card.orange .why-title{
+  color: white;
+}
+
+
+.why-card.white .details{
+  color: #e36d1c;
+}
+.why-card.orange .details{
+  color: white;
+}
+
+.why-card .div-img{
+  position: absolute;
+  top: -30px;
+  left: 20px;
+  padding: 10px;
+  height: 80px;
+  width: 80px;
+  background: white;
+}
+
+.why-card .div-img .img-why{
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+.swiperWhy .swiper-slide{
+  height: 100%
+}
+.marker{
+  position: absolute;
+  cursor: pointer;
+}
+.marker i{
+  font-size: 30px;
+  color: black;
+
+}
+.marker.marker-jakarta{
+  bottom: 27%;
+  left: 23%;
+
+}
+.problem_item{
+  max-width: 220px;
+}
+.register__form_wrapper .input-group-text{
+  background-color: white;
+
+}
+.register__form_wrapper .form-control{
+  border-left: none;
+}
+/* .fitur__item{
+  margin-top: 40px;
+} */
+.swiperWhy{
+  padding: 5rem 0 3rem 0 !important;
+}
+.fitur__item .card{
+  padding-top: 5rem;
+  height: 100%;
+}
+.swiperWhy .swiper-slide{
+  height: unset;
+  z-index: 25;
+}
+.alamat-modal i{
+    font-size: 26px;
+    margin-right: 15px;
+    color: #e36d1c;
+    width: 25px;
+}
+.alamat-modal p{
+  color: black;
+  margin-bottom: 0px;
+  font-size: 14px;
+}
+.btn-prim:focus,
+.btn-prim:hover{
+  background-color: #7e3504 !important ;
+
+}
+.register__form_wrapper .form-control:focus,
+.register__form_wrapper .form-control:active{
+      box-shadow: none;
+      border-color: #ced4da ;
+}
+.dukungan-img{
+  width: 200px;
+
+  object-fit: contain;
+}
+@media screen and (max-width: 996px) {
+  .marker i{
+    font-size: 28px;
+  }
+  .dukungan-img{
+    width: 150px;
+  }
+  .home__hero_left h1{
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .marker i{
+    font-size: 24px;
+  }
+  .marker.marker-jakarta{
+    bottom: 25%;
+  }
+  .dukungan-img{
+    width: 100% !important;
+    height: 180px !important;
+  }
+  .problem_item .card{
+    width: 150px;
+  }
+  .home__hero_left h1{
+    font-size: 28px;
+  }
+  .home__hero_left h6{
+    font-size: 14px;
+  }
+}

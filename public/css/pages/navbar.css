@@ -34,7 +34,8 @@
 
 .landing_nav_menu ul li {
     list-style: none;
-    margin-right: 30px;
+    margin-left: 25px;
+    margin-right: 0px !important;
 }
 
 .landing_nav_menu ul li a {
@@ -51,7 +52,7 @@
 }
 
 .landing_nav_menu ul li a:hover {
-    color: #f7761e;
+    color: #f7761e !important;
     text-decoration: none;
 }
 
@@ -66,7 +67,27 @@
 .landing_nav_logo img {
     width: 150px;
 }
-
+.navbar-expand-lg .navbar-collapse{
+  justify-content: end !important;
+}
+/* .collapse:not(.show){
+  display: block;
+} */
+.nav-link{
+  margin-left: 20px;
+}
+.nav-link:hover{
+  color: #e36d1c !important;
+}
+.nav-link.active{
+  color: #e36d1c !important;
+  font-weight: 800 !important;
+}
+@media screen and (max-width: 996px) {
+  .nav-link{
+    margin-left: 0px;
+  }
+}
 @media screen and (max-width: 768px) {
     .navbar__wrapper {
         position: fixed;

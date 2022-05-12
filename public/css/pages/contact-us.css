@@ -1,0 +1,63 @@
+.home__benefit_orn{
+  z-index: 0 !important;
+}
+
+.box-1{
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  background: linear-gradient(135deg, rgba(185,86,17,0.9) 35%, rgba(246,131,51,1) 100%);
+  top: 0px;
+  left: 0px;
+  z-index: 3;
+  padding: 1.5rem;
+}
+
+.box-2{
+  position: absolute;
+  width: 35%;
+  height: 35%;
+  background: white;
+  bottom: 0px;
+  right: 0px;
+  z-index: 1;
+  border: 3px solid #e36d1c;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.alamat-contact i{
+    font-size: 26px;
+    margin-right: 15px;
+    color: white;
+    width: 25px;
+}
+.alamat-contact p{
+  color: white;
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+.map-data{
+  display: none;
+}
+@media screen and (max-width: 996px) {
+  .alamat-contact p{
+
+    font-size: 16px;
+  }
+  .box-1{
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+  .box-2{
+    display: none;
+  }
+  .map-data{
+    display: block;
+    min-height: 225px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
