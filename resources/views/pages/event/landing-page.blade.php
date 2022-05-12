@@ -614,7 +614,7 @@
     <script src="{{ asset('plugin/marquee-scroll/dist/grouploop-1.0.3.min.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
     <script>
         AOS.init();
         // $('#exampleModal').modal('show')
