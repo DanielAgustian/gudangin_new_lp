@@ -26,7 +26,7 @@
 
                             </h6>
                             <button class="btn btn-join">Join Now</button>
-                            <button class="btn btn-white ml-4">Our Client</button>
+                            <button class="btn btn-white ml-4 btn-client">Our Client</button>
                         </div>
                     </div>
                     <div class="col-lg-6 hero__right">
@@ -162,7 +162,7 @@
             </div>
         </div>
     </section>
-    <section class="home__solution" style="background-color: white">
+    <section class="home__solution section-klien" style="background-color: white">
         <div class="container" data-aos="fade-up">
             <div class="inner__container">
                 <div style="height: 55px;">
@@ -323,25 +323,26 @@
 
 
 
-
-    <section class="home__benefit section-form " data-aos="fade-up">
-        {{-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn"> --}}
-        <section class="home__footer" data-aos="fade-up">
-            <div class="container">
-                <div class="inner__container">
-                    <div class="card">
-                        <div class="card-body">
-                            <p>Kamu stay at home kembangin bisnisnya</p>
-                            <h2>Biar kami yang <span>kelola dan kembangkan</span> usaha online anda!</h2>
-                            <button class="btn btn-join">Join Now<i class="fas fa-chevron-right"></i></button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+    <section class="home__footer" data-aos="fade-up">
         <div style="height: 35px;">
 
         </div>
+        <div class="container">
+            <div class="inner__container">
+                <div class="card">
+                    <div class="card-body">
+                        <p>Kamu stay at home kembangin bisnisnya</p>
+                        <h2>Biar kami yang <span>kelola dan kembangkan</span> usaha online anda!</h2>
+                        <button class="btn btn-join">Join Now<i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="home__benefit section-form " data-aos="fade-up">
+        {{-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn"> --}}
+        
+        
 
         <div class="container">
             <h2 style="font-weight: 800" class="text-center mb-4">Berminat Untuk Diskusi Dengan <span>Account
@@ -660,8 +661,13 @@
     <script type="text/javascript">
         $('.btn-join').click(function() {
             $('html, body').animate({
-                scrollTop: ($(".section-form").offset().top) - 120
+                scrollTop: ($(".section-form").offset().top) - 180
             }, 2500);
+        });
+        $('.btn-client').click(function() {
+            $('html, body').animate({
+                scrollTop: ($(".section-klien").offset().top) - 75
+            }, 1500);
         });
     </script>
 

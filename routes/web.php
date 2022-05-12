@@ -24,7 +24,7 @@ Route::get('/petunjuk', [PageController::class, 'faqPage'])->name('faqPage');
 Route::get('/fitur', [PageController::class, 'fiturPage'])->name('fiturPage');
 
 Route::get('/daftar', [RegisterController::class, 'registerPage'])->name('registerPage');
-Route::get('/landing-page', [LandingPageController::class, 'landingPage'])->name('landingPage');
+Route::get('/cloud-warehouse-marketplace-integration', [LandingPageController::class, 'landingPage'])->name('landingPage');
 
 // NEW HOME
 Route::get('/', [NewHomepageController::class, 'homePage'])->name('homePage');
