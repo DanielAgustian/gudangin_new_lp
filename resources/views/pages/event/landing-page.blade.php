@@ -4,6 +4,10 @@
     <link rel="stylesheet" href="{{ asset('css/pages/lp.css') }}?v=0.0.2.8">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
+        .home__fitur .card-body img {
+            max-height: 180px;
+            /* height: 100%; */
+        }
 
     </style>
 @endsection
@@ -30,8 +34,23 @@
                         </div>
                     </div>
                     <div class="col-lg-6 hero__right">
-                        <div class="home__hero_right">
+                        {{-- <div class="home__hero_right">
                             <img src="{{ asset('images/banner-lp.png') }}?v=1.0.0" alt="">
+                        </div> --}}
+                        <div class="swiper swiperBanner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/banner-lp.png') }}?v=1.0.0" alt="">
+                                </div>
+                                <div class="swiper-slide"><img src="{{ asset('images/banner-lp.png') }}?v=1.0.0" alt="">
+                                </div>
+                                <div class="swiper-slide"> <img src="{{ asset('images/banner-lp.png') }}?v=1.0.0"
+                                        alt=""></div>
+
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                                  <div class="swiper-button-prev"></div> -->
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -229,24 +248,24 @@
                     </div>
                     <div class="col-lg-7 home__works_right">
                         <!-- <button class="sec" data-toggle="modal" data-target="#exampleModal">Pelajari
-                                        Sekarang</button>
-                                    <button class="prm">Gabung Sekarang</button> -->
+                                            Sekarang</button>
+                                        <button class="prm">Gabung Sekarang</button> -->
                         <div class="swiper w-100 mySwiper">
                             <div class="swiper-wrapper">
                                 <!-- <div class="swiper-slide">
-                                          <div class="card rounded shadow">
-                                            <div class="card-body">
-                                              <div class="d-flex justify-content-center">
-                                                <img src="" alt="" class="img-client">
-                                              </div>
-                                              <h5 style="font-weight: 700" class="text-center mb-0"></h5>
-                                              <h5 class="text-center"></h5>
-                                              <p style="color:#e36d1c" class="text-center">
+                                              <div class="card rounded shadow">
+                                                <div class="card-body">
+                                                  <div class="d-flex justify-content-center">
+                                                    <img src="" alt="" class="img-client">
+                                                  </div>
+                                                  <h5 style="font-weight: 700" class="text-center mb-0"></h5>
+                                                  <h5 class="text-center"></h5>
+                                                  <p style="color:#e36d1c" class="text-center">
 
-                                              </p>
-                                            </div>
-                                          </div>
-                                        </div> -->
+                                                  </p>
+                                                </div>
+                                              </div>
+                                            </div> -->
 
                                 @component('component.testi-card')
                                     @slot('img')
@@ -341,8 +360,8 @@
     </section>
     <section class="home__benefit section-form " data-aos="fade-up">
         {{-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn"> --}}
-        
-        
+
+
 
         <div class="container">
             <h2 style="font-weight: 800" class="text-center mb-4">Berminat Untuk Diskusi Dengan <span>Account
@@ -488,8 +507,8 @@
                                         diisi </span>
                                 </div>
                                 <!-- <span id="errPass" class="d-none" style="font-size: 12px; color: #FF0000">Masukkan
-                                Kata
-                                Sandi</span> -->
+                                    Kata
+                                    Sandi</span> -->
                             </div>
                             <div class="form-group">
                                 <label>Message <span style="color:red">*</span></label>
@@ -497,8 +516,8 @@
                                     <div class="input-group-prepend"><span class="input-group-text"><img
                                                 src="{{ asset('images/icons/email.svg') }}" alt=""></span></div>
                                     <!-- <input id="date" type="date" class="form-control" name="date"
-                                    placeholder="Silahkan masukkan tanggal yang diinginkan"
-                                     /> -->
+                                        placeholder="Silahkan masukkan tanggal yang diinginkan"
+                                         /> -->
                                     <textarea name="message" rows="8" cols="25" class="form-control" placeholder="message" required></textarea>
                                 </div>
                                 <span id="errMessage" class="d-none" style="font-size: 12px; color: #FF0000">Pesan
@@ -506,22 +525,22 @@
                             </div>
 
                             <!-- <div class="register__syarat">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="ckBox"
-                                    style="height: unset; margin-top: 0.2rem">
-                                <label class="form-check-label" for="ckBox">
-                                    Dengan mendaftar, Saya setuju dengan <a href="">terms and conditions</a> dan <a
-                                        href="">privacy policy Gudangin</a>
-                                </label>
-                            </div>
-                        </div> -->
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="ckBox"
+                                        style="height: unset; margin-top: 0.2rem">
+                                    <label class="form-check-label" for="ckBox">
+                                        Dengan mendaftar, Saya setuju dengan <a href="">terms and conditions</a> dan <a
+                                            href="">privacy policy Gudangin</a>
+                                    </label>
+                                </div>
+                            </div> -->
                             <div class="g-recaptcha" data-callback="recaptchaCallback"
                                 data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
                             <button class="btn btn-prim btn-bigger mt-2" id="registerBtn" disabled>Join Now</button>
 
                             <!-- <div class="text-center my-3">
-                            <p>Sudah Punya Akun? <a href="">Log In</a></p>
-                        </div> -->
+                                <p>Sudah Punya Akun? <a href="">Log In</a></p>
+                            </div> -->
 
                         </div>
                     </form>
@@ -537,81 +556,81 @@
     </div>
     <!-- Modal -->
     <!-- <div class="modal fade " id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog modal-lg modal-dialog-centered">
-                        <div class="modal-content">
-                            <div class="modal-body home__modal">
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                        <div class="modal-dialog modal-lg modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body home__modal">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
 
-                                <div class="row justify-content-center">
-                                    <div class="col-lg-4 col-md-6 text-center">
-                                        <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
+                                    <div class="row justify-content-center">
+                                        <div class="col-lg-4 col-md-6 text-center">
+                                            <img class="mt-4" src="{{ asset('images/icons/step1.png') }}" alt="">
 
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>Penggabungan semua toko lintas Marketplace di Indonesia dalam 1 sistem</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>Agregasi Stok SKU.
+                                                        Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>Agregasi Chat dari semua marketplace</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>Otomatisasi Order List</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p>Agregasi Stok SKU.
-                                                    Orderan masuk akan otomatis terupdate saat terjadi penjualan di tiap marketplace</p>
+                                        <div class="col-lg-4 col-md-6 text-center">
+                                            <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
+                                            <div class="card">
+                                                <div class="card-body text-left">
+                                                    <strong>
+                                                        <p>One Stop Order</p>
+                                                    </strong>
+                                                    <p>Management System</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body text-left">
+                                                    <strong>
+                                                        <p>Stock Aggregation</p>
+                                                    </strong>
+                                                    <p>integrated to major Marketplace in Indonesia</p>
+                                                </div>
+                                            </div>
+                                            <div class="card">
+                                                <div class="card-body text-left">
+                                                    <strong>
+                                                        <p>Chat Center</p>
+                                                    </strong>
+                                                    <p>Integrated to major Marketplace in Indonesia</p>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p>Agregasi Chat dari semua marketplace</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p>Otomatisasi Order List</p>
+                                        <div class="col-lg-4 col-md-6 text-center">
+                                            <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <p>Hyperlocal Fulfillment System</p>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4 col-md-6 text-center">
-                                        <img class="mt-4" src="{{ asset('images/icons/step2.png') }}" alt="">
-                                        <div class="card">
-                                            <div class="card-body text-left">
-                                                <strong>
-                                                    <p>One Stop Order</p>
-                                                </strong>
-                                                <p>Management System</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-body text-left">
-                                                <strong>
-                                                    <p>Stock Aggregation</p>
-                                                </strong>
-                                                <p>integrated to major Marketplace in Indonesia</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <div class="card-body text-left">
-                                                <strong>
-                                                    <p>Chat Center</p>
-                                                </strong>
-                                                <p>Integrated to major Marketplace in Indonesia</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 col-md-6 text-center">
-                                        <img class="mt-4" src="{{ asset('images/icons/step3.png') }}" alt="">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <p>Hyperlocal Fulfillment System</p>
-                                            </div>
-                                        </div>
-                                    </div>
+
+                                    <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
                                 </div>
-
-                                <img src="{{ asset('images/ornament/modal-orn.png') }}" alt="" class="modal_orn">
                             </div>
                         </div>
-                    </div>
-                </div> -->
+                    </div> -->
 @endsection
 
 
@@ -644,7 +663,22 @@
         })
     </script>
 
-
+<script>
+    var swiper = new Swiper(".swiperBanner", {
+        // cssMode: true,
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+            el: ".swiper-pagination",
+        },
+        loop: true,
+        autoplay: {
+            delay: 10000,
+        },
+    });
+</script>
     <!-- Initialize Swiper -->
     <script>
         var swiper = new Swiper(".mySwiper", {
