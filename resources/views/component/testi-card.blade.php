@@ -5,7 +5,7 @@
         <img src="{{$img}}" alt="" class="img-client">
       </div>
       <h5 style="font-weight: 700" class="text-center mb-0">{{$name}}</h5>
-      <h5 class="text-center">{{$jabatan}}</h5>
+      <h6 class="text-center">{{$jabatan}}</h6>
       <p style="color:#e36d1c" class="text-center">
         {{$details}}
       </p>

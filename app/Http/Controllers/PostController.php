@@ -49,18 +49,20 @@ class PostController extends Controller
             // 'languages' => $agent->languages()[0],
             'created_at' =>  Carbon::now(),
         ];
-
-
+        $message = "";
+        if ($request->message) {
+          $message = $request->message;
+        }
         $userId = DB::table('clients')->insertGetId($data);
         $insertMeet= DB::table('client_input')->insertGetId([
             'client_id' => $userId,
             'status' => 'meet',
-            'message' => $request->message,
+            'message' => $message,
             'created_at'=> Carbon::now()
         ]);
         return redirect()->back()->with('successMsg', 'Success');
     }
-    
+
     public function contactUs(Request $request){
 
       $agent = new Agent();

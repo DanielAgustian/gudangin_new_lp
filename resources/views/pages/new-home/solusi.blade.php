@@ -3,7 +3,7 @@
 @section('cssinline')
     <link href="{{ asset('/css/pages/solusi.css') }}?v=0.2.5" rel="stylesheet" type="text/css">
     <!-- <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.8" rel="stylesheet" type="text/css"> -->
-    <link rel="stylesheet" href="{{asset('css/pages/lp.css')}}?v=0.0.2.9">
+    
     <link
         rel="stylesheet"
         href="https://unpkg.com/swiper/swiper-bundle.min.css"

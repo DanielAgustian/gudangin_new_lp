@@ -37,6 +37,15 @@
     <link href="{{ asset('css/pages/footer.css') }}?v=1.2.4" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ asset('css/pages/navbar.css') }}?v=1.1.1">
     <link href="{{ asset('/css/pages/new-style.css') }}?v=0.6.1" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="{{asset('css/pages/lp.css')}}?v=0.0.2.9">
+    <style media="screen">
+    @media screen and (max-width: 996px) {
+      .home__benefit_orn{
+        width: 100%;
+      }
+    }
+
+    </style>
     @yield('cssinline')
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -71,7 +80,7 @@
     </script>
     <!-- End Google Tag Manager -->
     <!-- Facebook Pixel Code -->
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
     !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -81,6 +90,18 @@
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '262143422740140');
+        fbq('track', 'PageView');
+    </script> -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '5879286915421976');
         fbq('track', 'PageView');
     </script>
     <!-- End Facebook Pixel Code -->
@@ -93,9 +114,12 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <!-- Facebook Pixel Code -->
-    <noscript><img height="1" width="1" style="display:none"
+    <!-- <noscript><img height="1" width="1" style="display:none"
           src="https://www.facebook.com/tr?id=262143422740140&ev=PageView&noscript=1"
-          /></noscript>
+          /></noscript> -->
+    <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=5879286915421976&ev=PageView&noscript=1"
+    /></noscript>
     <!-- End FB Pixel Code -->
 
     @include('component.navbar')

@@ -3,7 +3,7 @@
 @section('cssinline')
     <link href="{{ asset('/css/pages/blogs.css') }}?v=0.3.0 " rel="stylesheet" type="text/css">
     <link href="{{ asset('/css/pages/pagination.css') }}?v=0.0.1 " rel="stylesheet" type="text/css">
-    <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.7" rel="stylesheet" type="text/css">
+    <!-- <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.7" rel="stylesheet" type="text/css"> -->
     <link rel="stylesheet" href="{{asset('css/pages/lp.css')}}?v=0.0.2.8">
     <link
         rel="stylesheet"

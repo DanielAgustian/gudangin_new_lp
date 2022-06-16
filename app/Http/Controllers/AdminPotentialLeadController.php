@@ -5,7 +5,7 @@
 	use DB;
 	use CRUDBooster;
 
-	class AdminClientsController extends \crocodicstudio\crudbooster\controllers\CBController {
+	class AdminPotentialLeadController extends \crocodicstudio\crudbooster\controllers\CBController {
 
 	    public function cbInit() {
 
@@ -17,11 +17,11 @@
 			$this->button_table_action = false;
 			$this->button_bulk_action = true;
 			$this->button_action_style = "button_icon";
-			$this->button_add = true;
-			$this->button_edit = false;
-			$this->button_delete = false;
+			$this->button_add = false;
+			$this->button_edit = true;
+			$this->button_delete = true;
 			$this->button_detail = true;
-			$this->button_show = false;
+			$this->button_show = true;
 			$this->button_filter = true;
 			$this->button_import = false;
 			$this->button_export = false;
@@ -37,18 +37,26 @@
 			$this->col[] = ["label"=>"From","name"=>"id"];
 			$this->col[] = ["label"=>"Message","name"=>"id"];
 			$this->col[] = ["label"=>"Created At","name"=>"created_at"];
-			$this->col[] = ["label" => "Action", "name"=>"id"];
+			$this->col[] = ["label"=>"Action","name"=>"id"];
 			# END COLUMNS DO NOT REMOVE THIS LINE
 
 			# START FORM DO NOT REMOVE THIS LINE
 			$this->form = [];
-			$this->form[] = ['label'=>'Email','name'=>'email','type'=>'email','validation'=>'required|min:1|max:255|email|unique:clients','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Address','name'=>'address','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Bigo','name'=>'bigo','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Campaign','name'=>'campaign','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			$this->form[] = ['label'=>'Company','name'=>'company','type'=>'textarea','validation'=>'required|string|min:5|max:5000','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Next Fu','name'=>'next_fu','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Origin','name'=>'origin','type'=>'select','validation'=>'required|min:1|max:255','width'=>'col-sm-10','dataenum'=>'organic;ads;reference'];
-			$this->form[] = ['label'=>'Ref Old','name'=>'ref_old','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Status','name'=>'status','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
-			$this->form[] = ['label'=>'Whatsapp','name'=>'phone','validation'=>'required','width'=>'col-sm-9'];
+			$this->form[] = ['label'=>'ContactEmailValidation','name'=>'contactEmailValidation','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'ContactWhatsappValidation','name'=>'contactWhatsappValidation','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Desktop','name'=>'desktop','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Device','name'=>'device','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Dob','name'=>'dob','type'=>'date','validation'=>'required|date','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Email','name'=>'email','type'=>'email','validation'=>'required|min:1|max:255|email|unique:clients','width'=>'col-sm-10','placeholder'=>'Please enter a valid email address'];
+			$this->form[] = ['label'=>'Facebook','name'=>'facebook','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Flag','name'=>'flag','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Flag Double','name'=>'flag_double','type'=>'number','validation'=>'required|integer|min:0','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Photo','name'=>'photo','type'=>'upload','validation'=>'required|image|max:3000','width'=>'col-sm-10'];
+			$this->form[] = ['label'=>'Whatsapp','name'=>'whatsapp','type'=>'text','validation'=>'required|min:1|max:255','width'=>'col-sm-10'];
 			# END FORM DO NOT REMOVE THIS LINE
 
 			# OLD START FORM
@@ -294,9 +302,9 @@
 	        //Your code here
 					if (CRUDBooster::myPrivilegeId() > 2) {
 						// code...
-						$query->where('parent', '=', CRUDBooster::myID())->where('status','=', 'lead');
+						$query->where('parent', '=', CRUDBooster::myID())->where('status','=', 'potential');
 					}else{
-						$query->where('status','=', 'lead');
+						$query->where('status','=', 'potential');
 					}
 
 	    }

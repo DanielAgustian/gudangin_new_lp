@@ -14,11 +14,11 @@
 		$this->limit = "20";
 		$this->orderby = "id,desc";
 		$this->global_privilege = false;
-		$this->button_table_action = true;
+		$this->button_table_action = false;
 		$this->button_bulk_action = true;
 		$this->button_action_style = "button_icon";
 		$this->button_add = true;
-		$this->button_edit = true;
+		$this->button_edit = false;
 		$this->button_delete = false;
 		$this->button_detail = true;
 		$this->button_show = false;
@@ -37,6 +37,7 @@
 		$this->col[] = ["label"=>"From","name"=>"id"];
 		$this->col[] = ["label"=>"Message","name"=>"id"];
 		$this->col[] = ["label"=>"Created At","name"=>"created_at"];
+		$this->col[] = ["label" => "Action", "name"=>"id"];
 		# END COLUMNS DO NOT REMOVE THIS LINE
 
 		# START FORM DO NOT REMOVE THIS LINE
@@ -291,7 +292,13 @@
 		*/
 		public function hook_query_index(&$query) {
 				//Your code here
-				$query->where('status','=', 'contact');
+				if (CRUDBooster::myPrivilegeId() > 2) {
+					// code...
+					$query->where('parent', '=', CRUDBooster::myID())->where('status','=', 'contact');
+				}else{
+					$query->where('status','=', 'contact');
+				}
+
 		}
 
 		/*
@@ -315,6 +322,10 @@
 				if($client_input){
 					$column_value = $client_input->status;
 				}
+			}
+			if ($column_index == 8) {
+				$column_value = "<div class='button_action' style='text-align:right'><a class='btn btn-xs btn-primary' title='' onclick='' href='/admin/detail-lead/$column_value'><i class='fa fa-eye'></i> Detail</a></div>";
+
 			}
 		}
 

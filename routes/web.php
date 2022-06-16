@@ -7,6 +7,7 @@ use App\Http\Controllers\LandingPageController;
 use App\Http\Controllers\NewHomepageController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\LabController;
+use App\Http\Controllers\DetailLeadsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +42,11 @@ Route::get('/blogs/{slug}', [NewHomepageController::class, 'blogDetailPage'])->n
 // POST PROCESS
 Route::post('/post/discussion', [PostController::class, 'makeDiscussion'])->name('makeDiscussion');
 Route::post('/post/contact-us', [PostController::class, 'contactUs'])->name('contactUsPost');
+
+
+// CRUDBOOSTER CUSTOM VIEW
+Route::get('admin/detail-lead/{id}', [DetailLeadsController::class, 'detailLeadsPage'])->name('detailLeadsPage');
+Route::post('admin/change-status/{id}',[DetailLeadsController::class, 'changeStatus'])->name('changeStatusLead');
+Route::post('admin/update-lead-data/{id}', [DetailLeadsController::class, 'updateDetail'])->name('updateDataLead');
+Route::post('admin/save-activity', [DetailLeadsController::class, 'saveFollowUp'])->name('saveFollowUp');
+Route::post('admin/change-assign-to', [DetailLeadsController::class, 'assignLeads'])->name('assignLeads');
