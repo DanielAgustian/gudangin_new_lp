@@ -2,8 +2,8 @@
 
 @section('cssinline')
     <link href="{{ asset('/css/pages/about-us.css') }}?v=0.2.1" rel="stylesheet" type="text/css">
-    <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.7" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{asset('css/pages/lp.css')}}?v=0.0.2.8">
+    <!-- <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.7" rel="stylesheet" type="text/css"> -->
+
     <link
         rel="stylesheet"
         href="https://unpkg.com/swiper/swiper-bundle.min.css"
@@ -68,7 +68,7 @@
     </section>
 
     <section class="home__fitur">
-        <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn">
+        <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn ">
         <div class="container" style="position: relative; z-index: 3" data-aos="fade-up">
           <div style="height: 50px;">
 
@@ -128,6 +128,7 @@
             </div>
         </div>
     </section>
+
     <section class="home__works">
         <div class="container" data-aos="fade-up">
             <div class="inner__container">
@@ -184,6 +185,7 @@
             </svg>
         </div>
     </section>
+
 @endsection
 
 @section('pageJS')

@@ -3,8 +3,8 @@
 @section('cssinline')
     <link href="{{ asset('/css/pages/blogs-detail.css') }}?v=0.5.5" rel="stylesheet" type="text/css">
     <link href="{{ asset('/css/pages/blogs.css') }}?v=0.2.4  " rel="stylesheet" type="text/css">
-    <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.7" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="{{asset('css/pages/lp.css')}}?v=0.0.2.8">
+    <!-- <link href="{{ asset('/css/pages/new-style.css') }}?v=0.4.7" rel="stylesheet" type="text/css"> -->
+
     <link
         rel="stylesheet"
         href="https://unpkg.com/swiper/swiper-bundle.min.css"

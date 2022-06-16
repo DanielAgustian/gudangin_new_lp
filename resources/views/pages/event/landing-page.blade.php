@@ -1,10 +1,12 @@
 @extends('master')
 
 @section('cssinline')
-    <link rel="stylesheet" href="{{ asset('css/pages/lp.css') }}?v=0.0.2.8">
+    <link rel="stylesheet" href="{{ asset('css/pages/lp.css') }}?v=0.0.2.9">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <style>
-
+      .rounded-banner{
+        border-radius: 15px !important;
+      }
     </style>
 @endsection
 
@@ -25,13 +27,28 @@
                                 apapun jenis dan besarnya usaha online kamu.
 
                             </h6>
-                            <button class="btn btn-join">Join Now</button>
-                            <button class="btn btn-white ml-4 btn-client">Our Client</button>
+                            <button class="btn btn-join">Coba Gratis</button>
+                            <button class="btn btn-white ml-4 btn-client">Klien Kami</button>
                         </div>
                     </div>
                     <div class="col-lg-6 hero__right">
-                        <div class="home__hero_right">
+                        <!-- <div class="home__hero_right">
                             <img src="{{ asset('images/banner-lp.png') }}?v=1.0.0" alt="">
+                        </div> -->
+                        <div class="swiper swiperBanner">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <img src="{{ asset('images/banner-lp/banner_1.jpg') }}?v=1.0.0" alt="img" class="rounded-banner">
+                                </div>
+                                <div class="swiper-slide"> <img
+                                        src="{{ asset('images/banner-lp/banner_2.jpg') }}?v=1.0.0" alt="img" class="rounded-banner"></div>
+                                <div class="swiper-slide"> <img src="{{ asset('images/banner-lp/banner_3.jpg') }}?v=1.0.0" class="rounded-banner"
+                                        alt="img"></div>
+
+                            </div>
+                            <!-- <div class="swiper-button-next"></div>
+                              <div class="swiper-button-prev"></div> -->
+                            <div class="swiper-pagination"></div>
                         </div>
                     </div>
                 </div>
@@ -77,7 +94,7 @@
                     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="{{ asset('images/illustration/fitur-1.png') }}" alt="">
+                                <img src="{{ asset('images/illustration/fitur_integrasi_toko.jpg') }}?v=1.0.0" alt="">
                                 <h6>Integrasi toko online dari beberapa marketplace sekaligus</h6>
                             </div>
                         </div>
@@ -85,7 +102,7 @@
                     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="{{ asset('images/illustration/fitur-2.png') }}" alt="">
+                                <img src="{{ asset('images/illustration/fitur_agregasi_data.jpg') }}?v=1.0.0" alt="" class="rounded">
                                 <h6>Agregasi SKU Produk, data orderan/transaksi, jumlah pembeli dan data pembeli</h6>
                             </div>
                         </div>
@@ -93,7 +110,7 @@
                     <div class="col-lg-4 col-md-6 mt-lg-0 mt-4">
                         <div class="card">
                             <div class="card-body">
-                                <img src="{{ asset('images/illustration/fitur-3.png') }}" alt="">
+                                <img src="{{  asset('images/illustration/fitur_agregasi_chat.jpg') }}?v=1.0.0" alt="" class="rounded">
                                 <h6>Agregasi chat dari beberapa marketplace sehingga admin tidak perlu lagi login-logout
                                     banyak akun</h6>
                             </div>
@@ -250,22 +267,19 @@
 
                                 @component('component.testi-card')
                                     @slot('img')
-                                        https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
+                                        {{asset('images/testi/shinta.jpeg')}}
                                     @endslot
                                     @slot('name')
-                                        Bambang Adi
+                                        Shinta
                                     @endslot
                                     @slot('jabatan')
-                                        Manager Operasional PT. ABC
+                                        Jr. Manager Operational Warisan Perdangan Nusantara
                                     @endslot
                                     @slot('details')
-                                        Terima kasih untuk para team Gudangin yang
-                                        telah membantu dalam mengembangkan dan
-                                        mengelola bisnis online saya sehingga omset
-                                        penjualan produk saya semakin meningkat.
+                                        Terima kasih GUDANGIN, sudah membuat perhitungan stock saya menjadi mudah dan sederhana. Cukup dengan GUDANGIN, tidak perlu repot update stock di berbagai marketplace. Cukup dengan GUDANGIN, proses orderan tidak lewat dari 5 menit.
                                     @endslot
                                 @endcomponent
-                                @component('component.testi-card')
+                                <!-- @component('component.testi-card')
                                     @slot('img')
                                         https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500
                                     @endslot
@@ -298,7 +312,7 @@
                                         mengelola bisnis online saya sehingga omset
                                         penjualan produk saya semakin meningkat.
                                     @endslot
-                                @endcomponent
+                                @endcomponent -->
                             </div>
                             <div class="swiper-pagination"></div>
                         </div>
@@ -333,7 +347,7 @@
                     <div class="card-body">
                         <p>Kamu stay at home kembangin bisnisnya</p>
                         <h2>Biar kami yang <span>kelola dan kembangkan</span> usaha online anda!</h2>
-                        <button class="btn btn-join">Join Now<i class="fas fa-chevron-right"></i></button>
+                        <button class="btn btn-join">Coba Gratis<i class=" ml-2 fas fa-chevron-right"></i></button>
                     </div>
                 </div>
             </div>
@@ -341,8 +355,8 @@
     </section>
     <section class="home__benefit section-form " data-aos="fade-up">
         {{-- <img src="{{ asset('images/ornament/benefit-wave.svg') }}" alt="" class="home__benefit_orn"> --}}
-        
-        
+
+
 
         <div class="container">
             <h2 style="font-weight: 800" class="text-center mb-4">Berminat Untuk Diskusi Dengan <span>Account
@@ -474,36 +488,34 @@
 
 
                             <div class="form-group">
-                                <label>Nama Perusahaan <span style="color:red">*</span></label>
+                                <label>Nama Toko Online / URL<span style="color:red">*</span></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text">
                                             <!-- <img src="{{ asset('images/icons/password.svg') }}" alt=""> -->
                                             <i class="fas fa-building" style="margin-left: 4px;"></i>
                                         </span></div>
                                     <input id="input-perusahaan" type="text" class="form-control" name="company"
-                                        placeholder="Nama Perusahaan" style="border-right: transparent" required />
+                                        placeholder="Nama Toko Online / URL" style="border-right: transparent" required />
                                     <span id="errCompany" class="d-none"
-                                        style="font-size: 12px; color: #FF0000">Nomor
-                                        Nama Perusahaan Harus
+                                        style="font-size: 12px; color: #FF0000">
+                                        Nama Toko Online / URL Harus
                                         diisi </span>
                                 </div>
                                 <!-- <span id="errPass" class="d-none" style="font-size: 12px; color: #FF0000">Masukkan
                                 Kata
                                 Sandi</span> -->
                             </div>
-                            <div class="form-group">
+                            <!-- <div class="form-group">
                                 <label>Message <span style="color:red">*</span></label>
                                 <div class="input-group">
                                     <div class="input-group-prepend"><span class="input-group-text"><img
                                                 src="{{ asset('images/icons/email.svg') }}" alt=""></span></div>
-                                    <!-- <input id="date" type="date" class="form-control" name="date"
-                                    placeholder="Silahkan masukkan tanggal yang diinginkan"
-                                     /> -->
+
                                     <textarea name="message" rows="8" cols="25" class="form-control" placeholder="message" required></textarea>
                                 </div>
                                 <span id="errMessage" class="d-none" style="font-size: 12px; color: #FF0000">Pesan
                                     tidak boleh kosong</span>
-                            </div>
+                            </div> -->
 
                             <!-- <div class="register__syarat">
                             <div class="form-check">
@@ -517,7 +529,7 @@
                         </div> -->
                             <div class="g-recaptcha" data-callback="recaptchaCallback"
                                 data-sitekey="6LdLM1UeAAAAANIPJEOY3Bo_7bysZ5pSdgMMkyc5"></div>
-                            <button class="btn btn-prim btn-bigger mt-2" id="registerBtn" disabled>Join Now</button>
+                            <button class="btn btn-prim btn-bigger mt-2" id="registerBtn" disabled>Coba Gratis</button>
 
                             <!-- <div class="text-center my-3">
                             <p>Sudah Punya Akun? <a href="">Log In</a></p>
@@ -657,7 +669,7 @@
             },
         });
     </script>
-    <!-- Logic for Click Button Join Now -->
+    <!-- Logic for Click Button Coba Gratis -->
     <script type="text/javascript">
         $('.btn-join').click(function() {
             $('html, body').animate({
@@ -730,19 +742,35 @@
                 $('#errCompany').addClass('d-none');
             }
 
-            if (message.length < 3) {
-                console.log("message empty");
-                errorMessage = true;
-                $('#errMessage').removeClass('d-none');
-            } else {
-                $('#errMessage').addClass('d-none');
-            }
+            // if (message.length < 3) {
+            //     console.log("message empty");
+            //     errorMessage = true;
+            //     $('#errMessage').removeClass('d-none');
+            // } else {
+            //     $('#errMessage').addClass('d-none');
+            // }
 
 
-            if (errorName || errorEmail || errorPhone || errorCompany || errorMessage) {
+            if (errorName || errorEmail || errorPhone || errorCompany ) {
                 console.log("ONE OF THEM IS EMPTY/WRONG");
                 e.preventDefault();
             }
         })
+    </script>
+    <script>
+        var swiper = new Swiper(".swiperBanner", {
+            // cssMode: true,
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            pagination: {
+                el: ".swiper-pagination",
+            },
+            loop: true,
+            autoplay: {
+                delay: 10000,
+            },
+        });
     </script>
 @endsection
